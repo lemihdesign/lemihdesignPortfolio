@@ -1,0 +1,27 @@
+@keyframes animate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes colorAnimation {
+    to {
+        stroke: transparent;
+        fill: #EF1055;
+        opacity: .5;
+        left: -30%;
+    }
+}
+
+@keyframes moveScrollDot {
+    to {
+        margin-top: 40px;
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    to {
+        opacity: .8;
+    }
+}
