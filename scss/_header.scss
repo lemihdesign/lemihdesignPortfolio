@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background: radial-gradient(#161616, #272727);
     position: fixed;
     top: 0;
@@ -27,15 +27,29 @@ header {
 
     p.jobTitle {
         position: absolute;
-        top: 46%;
+        top: 49%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
-        font-size: 15px;
+        font-size: 18px;
         color: rgb(199, 199, 199);
         font-family: $fontPoppins;
         opacity: 0;
         animation: show .8s 3s linear both;
+        letter-spacing: 15px;
+    }
+
+    p.jobTitle span {
+        color: #EF1055;
+    }
+
+    p.jobTitle i {
+        transition: .4s;
+    }
+
+    p.jobTitle i:hover {
+        color: #EF1055;
+        cursor: pointer;
     }
 
     p.scrollDown {
@@ -75,9 +89,9 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 20px;
-        height: 50px;
+        height: 35px;
         background-color: transparent;
-        border: 1px solid rgb(199, 199, 199);
+        border: 2px solid rgb(199, 199, 199);
         border-radius: 10px;
         display: flex;
         justify-content: center;
@@ -89,9 +103,13 @@ header {
         width: 5px;
         height: 5px;
         display: block;
-        background-color: #fff;
+        background-color: #EF1055;
         border-radius: 50%;
-        margin-top: 10px;
+        margin-top: 5px;
         animation: moveScrollDot 1s linear infinite;
     }
+}
+
+header.active {
+    left: 100%;
 }
