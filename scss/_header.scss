@@ -5,7 +5,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     transition: 1.2s ease-in;
     display: flex;
     justify-content: center;
@@ -22,7 +22,8 @@ header {
         color: #fff;
         text-transform: uppercase;
         font-size: 64px;
-        animation: show .8s 3s linear both;
+        animation: show .8s 3s linear both, textGlow 5s 3s linear infinite alternate;
+        outline: none;
     }
 
     p.jobTitle {
@@ -40,7 +41,8 @@ header {
     }
 
     p.jobTitle span {
-        color: #EF1055;
+        color: $colorBlue;
+        animation: colorChangeSpan 3s 2.8s infinite alternate-reverse;
     }
 
     p.jobTitle i {
@@ -48,7 +50,7 @@ header {
     }
 
     p.jobTitle i:hover {
-        color: #EF1055;
+        color: $colorPink;
         cursor: pointer;
     }
 
@@ -75,12 +77,12 @@ header {
     }
 
     svg .draw {
-        stroke: #EF1055;
+        stroke: $colorBlue;
         stroke-width: 2px;
         fill: transparent;
         stroke-dasharray: 3200;
         stroke-dashoffset: 3200;
-        animation: animate 2s linear both, colorAnimation .5s 2.8s linear both;
+        animation: animate 2s linear both, colorAnimation .5s 2.8s linear both, colorChange 3s 2.8s linear infinite alternate-reverse;
     }
 
     button {
@@ -103,10 +105,10 @@ header {
         width: 5px;
         height: 5px;
         display: block;
-        background-color: #EF1055;
+        background-color: $colorBlue;
         border-radius: 50%;
         margin-top: 5px;
-        animation: moveScrollDot 1s linear infinite;
+        animation: moveScrollDot 1s linear infinite, colorChangeSpan 3s infinite alternate-reverse;
     }
 }
 

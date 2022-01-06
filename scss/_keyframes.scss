@@ -7,7 +7,7 @@
 @keyframes colorAnimation {
     to {
         stroke: transparent;
-        fill: #EF1055;
+        fill: $colorBlue;
         opacity: .5;
         left: -30%;
     }
@@ -23,5 +23,80 @@
 @keyframes show {
     to {
         opacity: .8;
+    }
+}
+
+@keyframes colorChange {
+    from {
+        stroke: $colorBlue;
+        box-shadow: 0px 0px 10px 3px $colorBlue;
+    }
+
+    to {
+        stroke: $colorPink;
+        box-shadow: 0px 0px 10px 3px $colorPink;
+    }
+}
+
+@keyframes colorChangeSpan {
+    from {
+        color: $colorBlue;
+    }
+
+    to {
+        color: $colorPink;
+    }
+}
+
+@keyframes waveAnimation {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes waveAnimation2 {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes textGlow {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #161616;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px $colorBlue,
+            0 0 15px $colorPink,
+            0 0 40px $colorBlue,
+            0 0 60px $colorPink,
+            0 0 160px $colorBlue;
     }
 }
