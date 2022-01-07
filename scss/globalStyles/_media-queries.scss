@@ -12,14 +12,16 @@
 }
 
 @media(min-width: 2000px) {
-    section.projectHeader {
+    .webContainer {
         .wrapper {
-            .imageSection {
-                height: 850px;
+            section.projectHeader {
+                .imageSection {
+                    height: 850px;
 
-                img {
-                    width: 100%;
-                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }
