@@ -1,0 +1,27 @@
+@media(max-width: 1024px) {
+    header {
+        h1.nameTitle {
+            font-size: 32px;
+        }
+
+        p.jobTitle {
+            top: 55%;
+            letter-spacing: 7px;
+        }
+    }
+}
+
+@media(min-width: 2000px) {
+    section.projectHeader {
+        .wrapper {
+            .imageSection {
+                height: 850px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

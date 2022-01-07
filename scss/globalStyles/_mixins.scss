@@ -1,0 +1,5 @@
+@mixin wrapper($width, $height, $top, $sides) {
+    width: $width;
+    height: $height;
+    margin: $top $sides;
+}
