@@ -1,5 +1,5 @@
-const images = ['src/projects/e-volunteer/wolontariuszAcceptedReport.png', 'src/projects/e-volunteer/wolontariuszCategory.png', 'src/projects/e-volunteer/wolontariuszVolonteer.png', 'src/projects/e-volunteer/wolontariuszReports.png', 'src/projects/e-volunteer/wolontariuszQ&A.png', 'src/projects/e-volunteer/wolontariuszSenior.png', 'src/projects/e-volunteer/wolontariuszNewReport.png', 'src/projects/e-volunteer/wolontariuszNewReport2.png', 'src/projects/e-volunteer/wolontariuszNewReport3.png', 'src/projects/e-volunteer/wolontariuszAcceptedReport.png'];
-const image = document.querySelector('.headerImage');
+const images = ['src/projects/e-volunteer/rawImages/volunteerDesktop2.jpg', 'src/projects/e-volunteer/rawImages/volunteerMainDesktop.jpg', 'src/projects/e-volunteer/rawImages/reports.jpg', 'src/projects/e-volunteer/rawImages/helpScreen.jpg', 'src/projects/e-volunteer/rawImages/profileScreen.jpg', 'src/projects/e-volunteer/rawImages/seniorMainDesktop.jpg', 'src/projects/e-volunteer/rawImages/newReport1.jpg', 'src/projects/e-volunteer/rawImages/newReport2.jpg', 'src/projects/e-volunteer/rawImages/notifications.jpg', 'src/projects/e-volunteer/rawImages/editReport.jpg'];
+const image = document.querySelector('.mainImage');
 let activeElement = 0;
 
 function changeElement() {

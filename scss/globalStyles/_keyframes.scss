@@ -103,26 +103,26 @@
 
 @keyframes color {
     0% {
-        opacity: 0;
+        margin-left: -100%;
     }
 
     8% {
-        opacity: 0;
+        margin-left: -100%;
     }
 
     13% {
-        opacity: 1;
+        margin-left: 0;
     }
 
     87% {
-        opacity: 1;
+        margin-left: 0;
     }
 
     92% {
-        opacity: 0;
+        margin-left: 0;
     }
 
     100% {
-        opacity: 0;
+        margin-left: calc(100% + 5px);
     }
 }

@@ -1,40 +1,66 @@
 .projectDescription {
     width: 100%;
-    min-height: 100vh;
     height: 100%;
     background-color: $colorDark;
     padding: 100px 0;
 
+    img.mobile {
+        width: 80%;
+        height: 80%;
+        margin-top: 50px;
+    }
+
     h2 {
-        font-family: $fontGilroyLight;
-        color: #fff;
-        font-size: 15px;
+        @include fontDeclaration($fontGilroyLight, 15px, #fff);
         letter-spacing: 2px;
         text-transform: uppercase;
     }
 
     p {
-        font-family: $fontPoppins;
-        font-size: 14px;
+        @include fontDeclaration($fontPoppins, 14px, $colorLightDark);
         font-weight: 100;
-        color: $colorLightDark;
         margin-top: 10px;
+        line-height: 25px;
     }
 
     .content {
-        width: 100%;
+        width: 90%;
         height: 100%;
         display: flex;
         flex-wrap: wrap;
         position: relative;
 
+
+        .colContainer {
+            width: 85%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+
+            .col {
+                width: 28.3%;
+                height: 100%;
+
+                h2 {
+                    @include fontDeclaration($fontGilroyLight, 13px, #fff);
+                }
+
+                li {
+                    @include fontDeclaration($fontPoppins, 13px, $colorLightDark);
+                    margin-top: 10px;
+                }
+            }
+        }
+
         .left.first {
             width: 58%;
             height: 70vh;
-            background-image: url("../src/projects/e-volunteer/registerScreen.png");
+            background-image: url("../src/projects/e-volunteer/mockupsImages/mockupRegister.jpg");
             background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
+            box-shadow: 0px 5px 3px 5px rgba($color: #000000, $alpha: 0.2);
         }
 
         .left.second {
@@ -47,21 +73,17 @@
             padding: 30px 0;
 
             h2 {
-                text-align: left;
-                font-family: $fontGilroyLight;
-                font-size: 15px;
+                @include fontDeclaration($fontGilroyLight, 15px, #fff);
                 letter-spacing: 2px;
                 text-transform: uppercase;
-                color: #fff;
+                text-align: left;
             }
 
             p {
-                text-align: left;
                 width: 450px;
-                font-family: $fontPoppins;
-                font-size: 14px;
+                @include fontDeclaration($fontPoppins, 14px, $colorLightDark);
                 font-weight: 100;
-                color: $colorLightDark;
+                text-align: left;
                 margin-top: 10px;
                 padding-right: 40px;
             }
@@ -71,27 +93,23 @@
             width: 32%;
             height: 100%;
             display: flex;
-            align-items: flex-end;
             justify-content: center;
             flex-direction: column;
             padding: 30px 0;
 
             h2 {
-                text-align: right;
-                font-family: $fontGilroyLight;
-                font-size: 15px;
+                @include fontDeclaration($fontGilroyLight, 15px, #fff);
                 letter-spacing: 2px;
                 text-transform: uppercase;
-                color: #fff;
+                padding-left: 40px;
             }
 
             p {
-                text-align: right;
-                width: 450px;
-                font-family: $fontPoppins;
-                font-size: 14px;
+                text-align: justify;
+                line-height: 25px;
+                width: 550px;
+                @include fontDeclaration($fontPoppins, 14px, $colorLightDark);
                 font-weight: 100;
-                color: $colorLightDark;
                 margin-top: 10px;
                 padding-left: 40px;
             }
@@ -108,6 +126,10 @@
     }
 
     .content.second {
-        margin-top: 50px;
+        margin-top: 100px;
+    }
+
+    .content.third {
+        margin-top: -100px;
     }
 }

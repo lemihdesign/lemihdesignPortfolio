@@ -3,3 +3,9 @@
     height: $height;
     margin: $top $sides;
 }
+
+@mixin fontDeclaration($family, $size, $color) {
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}
