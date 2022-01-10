@@ -3,6 +3,18 @@
     height: 100%;
     background-color: $colorDark;
 
+    .backArrow {
+        width: 100%;
+        height: 50px;
+        padding: 20px;
+
+        i {
+            color: #fff;
+            font-size: 32px;
+            cursor: pointer;
+        }
+    }
+
     .wrapper {
         @include wrapper(90%, 100%, 0, auto);
         padding: 100px 0;
@@ -70,6 +82,7 @@
                 @include fontDeclaration($fontPoppins, 14px, $colorLightDark);
                 font-weight: 100;
                 line-height: 25px;
+                text-align: justify;
             }
 
             .imageSection {

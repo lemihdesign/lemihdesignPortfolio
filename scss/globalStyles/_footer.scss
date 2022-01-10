@@ -1,0 +1,11 @@
+footer {
+    width: 100%;
+    height: 50px;
+    @include fontDeclaration($fontPoppins, 15px, $colorLightDark);
+
+    a {
+        text-decoration: none;
+        color: $colorLightDark;
+        cursor: pointer;
+    }
+}

@@ -21,6 +21,7 @@
         font-weight: 100;
         margin-top: 10px;
         line-height: 25px;
+        text-align: justify;
     }
 
     .content {
@@ -86,6 +87,7 @@
                 text-align: left;
                 margin-top: 10px;
                 padding-right: 40px;
+                text-align: justify;
             }
         }
 
@@ -127,9 +129,50 @@
 
     .content.second {
         margin-top: 100px;
+
+        .mobileOnly {
+            display: none;
+        }
     }
 
     .content.third {
+        margin-top: -100px;
+
+        ul {
+            margin: 15px 10px;
+
+            li {
+                @include fontDeclaration($fontPoppins, 13px, $colorLightDark);
+                margin-top: 10px;
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    width: 8px;
+                    height: 8px;
+                    display: block;
+                    border-radius: 50%;
+                    border: none;
+                    margin-right: 15px;
+                }
+
+                span.redStatus {
+                    background-color: lightcoral;
+                }
+
+                span.greenStatus {
+                    background-color: lime;
+                }
+
+                span.orangeStatus {
+                    background-color: orange;
+                }
+            }
+        }
+    }
+
+    .content.fourth {
         margin-top: -100px;
     }
 }
