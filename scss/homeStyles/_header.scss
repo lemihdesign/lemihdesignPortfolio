@@ -1,8 +1,6 @@
-header {
+header.mainSiteHeader {
     width: 100%;
     height: 110vh;
-    background: radial-gradient(#161616, #272727);
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 5;
@@ -10,6 +8,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: crosshair;
 
     h1.nameTitle {
         position: absolute;
@@ -18,10 +17,8 @@ header {
         transform: translate(-50%, -50%);
         opacity: 0;
         z-index: 1;
-        font-family: $fontGilroyHeavy;
-        color: #333;
+        @include fontDeclaration($fontGilroyHeavy, 64px, $colorLightDark);
         text-transform: uppercase;
-        font-size: 64px;
         animation: show .8s 3s linear both, textGlow 5s 3s linear infinite alternate;
         outline: none;
     }
@@ -32,9 +29,7 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
-        font-size: 18px;
-        color: rgb(199, 199, 199);
-        font-family: $fontPoppins;
+        @include fontDeclaration($fontPoppins, 18px, $colorDark);
         opacity: 0;
         animation: show .8s 3s linear both;
         letter-spacing: 15px;
@@ -45,24 +40,12 @@ header {
         animation: colorChangeSpan 3s 2.8s infinite alternate-reverse;
     }
 
-    p.jobTitle i {
-        transition: .4s;
-    }
-
-    p.jobTitle i:hover {
-        color: $colorPink;
-        cursor: pointer;
-    }
-
     p.scrollDown {
         position: absolute;
         top: 96vh;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: $fontPoppins;
-        font-weight: 100;
-        color: #fff;
-        font-size: 13px;
+        @include fontDeclaration($fontPoppins, 13px, $colorDark);
         opacity: 0;
         animation: show .8s 3s linear both;
     }
@@ -93,7 +76,7 @@ header {
         width: 20px;
         height: 35px;
         background-color: transparent;
-        border: 2px solid rgb(199, 199, 199);
+        border: 2px solid $colorDark;
         border-radius: 10px;
         display: flex;
         justify-content: center;

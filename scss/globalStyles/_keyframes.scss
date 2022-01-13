@@ -126,3 +126,43 @@
         margin-left: calc(100% + 5px);
     }
 }
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: -25px;
+    }
+}
+
+@keyframes slideFromLeftMobile {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes arrowAnimation {
+    from {
+        margin-top: 10px;
+    }
+
+    to {
+        margin-top: 20px;
+    }
+}
+
+@keyframes projectTitleAnimation {
+    from {
+        margin-top: 0px;
+    }
+
+    to {
+        margin-top: -100px;
+    }
+}

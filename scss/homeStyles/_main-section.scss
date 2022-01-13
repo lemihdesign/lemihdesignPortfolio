@@ -2,44 +2,411 @@ section.main-section {
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    background-color: #fff;
-    padding: 200px 30px;
-    position: relative;
-    z-index: 3;
+    cursor: crosshair;
+    // overflow-x: hidden;
 
-    h1.welcomeName {
-        font-family: $fontGilroyHeavy;
-        font-size: 84px;
-        color: #161616;
-        text-transform: uppercase;
-
-        span {
-            color: $colorPink;
-        }
-    }
-
-    p.jobTitle {
-        font-family: $fontPoppins;
-        font-size: 14px;
-        font-weight: 800;
-        color: #161616;
-        padding: 15px;
-    }
-
-    .introduceSection {
-        width: 100%;
+    .mainSectionContainer {
+        width: 95%;
         height: 100%;
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        align-content: space-between;
+        margin: 0 auto;
 
-        p {
-            width: 700px;
-            font-family: $fontPoppins;
-            color: #161616;
-            font-size: 14px;
-            line-height: 30px;
-            padding-right: 20px;
-            margin-top: 50px;
+        .box.first {
+            position: relative;
+            width: 100%;
+            min-height: 300px;
+            height: 100%;
+            margin-top: 10px;
+
+            h3 {
+                font-family: $fontGilroyHeavy;
+                font-size: 96px;
+                color: $colorDark;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: .4s linear;
+            }
+
+            h3.letter1 {
+                top: 130px;
+                left: 50px;
+            }
+
+            h3.letter2 {
+                top: 50px;
+                left: 75px;
+            }
+
+            h3.letter3 {
+                top: 500px;
+                left: 90px;
+                font-size: 128px;
+            }
+
+            h3.letter4 {
+                top: 400px;
+                left: 120px;
+            }
+
+            h3.letter5 {
+                top: 250px;
+                left: 150px;
+            }
+
+            h3.letter6 {
+                top: 150px;
+                left: 600px;
+            }
+
+            h3.letter7 {
+                top: 300px;
+                left: 550px;
+            }
+
+            h3.letter8 {
+                top: 460px;
+                left: 900px;
+            }
+
+            h3.letter9 {
+                top: 600px;
+                left: 1100px;
+            }
+
+            h3.letter10 {
+                top: 150px;
+                left: 950px;
+            }
+
+            h3.letter11 {
+                top: 200px;
+                left: 1300px;
+            }
+
+            .letterDescription.first {
+                position: absolute;
+                top: 70%;
+                left: 0;
+                @include fontDeclaration($fontPoppins, 14px, $colorDark);
+            }
+        }
+
+        .box.second {
+            position: relative;
+            width: 100%;
+            min-height: 300px;
+            height: 100%;
+            margin-top: 10px;
+
+            h3 {
+                font-family: $fontGilroyHeavy;
+                font-size: 164px;
+                color: $colorPink;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0.8;
+                transition: .4s linear;
+            }
+
+            h3.letter1 {
+                top: 180px;
+                left: 250px;
+            }
+
+            h3.letter2 {
+                top: 10px;
+                left: 300px;
+            }
+
+            h3.letter3 {
+                top: 500px;
+                left: 1200px;
+                font-size: 128px;
+            }
+
+            h3.letter4 {
+                top: 650px;
+                left: 990px;
+            }
+
+            h3.letter5 {
+                top: 550px;
+                left: 330px;
+            }
+
+            h3.letter6 {
+                top: 20px;
+                left: 750px;
+            }
+
+            h3.letter7 {
+                top: 300px;
+                left: 7 50px;
+            }
+
+            .letterDescription.second {
+                position: absolute;
+                top: 70%;
+                left: 0;
+                @include fontDeclaration($fontPoppins, 14px, $colorDark);
+            }
+        }
+
+        .box.third {
+            position: relative;
+            width: 100%;
+            min-height: 300px;
+            height: 100%;
+            margin-top: 10px;
+
+            h3 {
+                font-family: $fontGilroyHeavy;
+                font-size: 48px;
+                color: $colorBlue;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0.8;
+                transition: .4s linear;
+            }
+
+            h3.letter1 {
+                top: 260px;
+                left: 450px;
+            }
+
+            h3.letter2 {
+                top: 10px;
+                left: 200px;
+            }
+
+            h3.letter3 {
+                top: 350px;
+                left: 1100px;
+                font-size: 64px;
+            }
+
+            h3.letter4 {
+                top: 650px;
+                left: 990px;
+            }
+
+            h3.letter5 {
+                top: 550px;
+                left: 330px;
+            }
+
+            h3.letter6 {
+                top: 20px;
+                left: 1400px;
+            }
+
+            .letterDescription.third {
+                position: absolute;
+                top: 70%;
+                left: 0;
+                @include fontDeclaration($fontPoppins, 14px, $colorDark);
+            }
+        }
+
+        span.projectsArrowLabel {
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+
+            p {
+                width: 10px;
+                word-wrap: break-word;
+                text-align: center;
+                @include fontDeclaration($fontGilroyHeavy, 13px, $colorDark);
+                text-transform: uppercase;
+            }
+
+            i {
+                color: $colorPink;
+                animation: arrowAnimation .6s ease-in-out alternate infinite;
+            }
+        }
+    }
+}
+
+section.main-section:hover {
+    .mainSectionContainer {
+        .box.first {
+            h3.letter1 {
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter2 {
+                top: 50%;
+                left: 90px;
+                transform: translate(-50%, -50%);
+            }
+
+            h3.letter3 {
+                top: 50%;
+                left: 145px;
+                font-size: 96px;
+                transform: translate(-50%, -50%);
+            }
+
+            h3.letter4 {
+                top: 50%;
+                left: 205px;
+                font-size: 96px;
+                transform: translate(-50%, -50%);
+            }
+
+            h3.letter5 {
+                top: 50%;
+                left: 255px;
+                font-size: 96px;
+                transform: translate(-50%, -50%);
+            }
+
+            h3.letter6 {
+                top: 50%;
+                left: 315px;
+                font-size: 96px;
+                transform: translate(-50%, -50%);
+            }
+
+            h3.letter7 {
+                top: 50%;
+                left: 398px;
+                font-size: 96px;
+                transform: translate(-50%, -50%);
+            }
+
+            h3.letter8 {
+                top: 50%;
+                left: 478px;
+                font-size: 96px;
+                transform: translate(-50%, -50%);
+            }
+
+            h3.letter9 {
+                top: 50%;
+                left: 545px;
+                font-size: 96px;
+                transform: translate(-50%, -50%);
+            }
+
+            h3.letter10 {
+                top: 50%;
+                left: 605px;
+                font-size: 96px;
+                transform: translate(-50%, -50%);
+            }
+
+            h3.letter11 {
+                top: 50%;
+                left: 665px;
+                font-size: 96px;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .box.second {
+            h3 {
+                font-size: 96px;
+                opacity: 1;
+                transition: .6s .3s linear;
+            }
+
+            h3.letter1 {
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter2 {
+                top: 50%;
+                left: 63px;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter3 {
+                top: 50%;
+                left: 138px;
+                font-size: 96px;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter4 {
+                top: 50%;
+                left: 194px;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter5 {
+                top: 50%;
+                left: 219px;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter6 {
+                top: 50%;
+                left: 285px;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter7 {
+                top: 50%;
+                left: 335px;
+                transform: translate(0, -50%);
+            }
+        }
+
+        .box.third {
+            h3 {
+                font-size: 96px;
+                opacity: 1;
+                transition: .4s .6s linear;
+            }
+
+            h3.letter1 {
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter2 {
+                top: 50%;
+                left: 58px;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter3 {
+                top: 50%;
+                left: 133px;
+                font-size: 96px;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter4 {
+                top: 50%;
+                left: 187px;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter5 {
+                top: 50%;
+                left: 280px;
+                transform: translate(0, -50%);
+            }
+
+            h3.letter6 {
+                top: 50%;
+                left: 350px;
+                transform: translate(0, -50%);
+            }
         }
     }
 }
