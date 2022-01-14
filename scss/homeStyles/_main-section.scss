@@ -1,6 +1,6 @@
 section.main-section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     height: 100%;
     cursor: crosshair;
     // overflow-x: hidden;
@@ -89,7 +89,8 @@ section.main-section {
             .letterDescription.first {
                 position: absolute;
                 top: 70%;
-                left: 0;
+                left: -100%;
+                width: 1300px;
                 @include fontDeclaration($fontPoppins, 14px, $colorDark);
             }
         }
@@ -151,7 +152,8 @@ section.main-section {
             .letterDescription.second {
                 position: absolute;
                 top: 70%;
-                left: 0;
+                left: -100%;
+                width: 1300px;
                 @include fontDeclaration($fontPoppins, 14px, $colorDark);
             }
         }
@@ -207,8 +209,9 @@ section.main-section {
 
             .letterDescription.third {
                 position: absolute;
-                top: 70%;
-                left: 0;
+                top: 75%;
+                left: -130%;
+                width: 1300px;
                 @include fontDeclaration($fontPoppins, 14px, $colorDark);
             }
         }
@@ -311,6 +314,11 @@ section.main-section:hover {
                 font-size: 96px;
                 transform: translate(-50%, -50%);
             }
+
+            .letterDescription.first {
+                animation: slideFromLeft .3s 1s ease-in-out both;
+                transform: translate(0, -50%);
+            }
         }
 
         .box.second {
@@ -362,6 +370,11 @@ section.main-section:hover {
                 left: 335px;
                 transform: translate(0, -50%);
             }
+
+            .letterDescription.second {
+                animation: slideFromLeft .3s 1s ease-in-out both;
+                transform: translate(0, -50%);
+            }
         }
 
         .box.third {
@@ -405,6 +418,11 @@ section.main-section:hover {
             h3.letter6 {
                 top: 50%;
                 left: 350px;
+                transform: translate(0, -50%);
+            }
+
+            .letterDescription.third {
+                animation: slideFromLeft .3s 1s ease-in-out both;
                 transform: translate(0, -50%);
             }
         }

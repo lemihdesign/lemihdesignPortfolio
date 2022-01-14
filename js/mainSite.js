@@ -11,3 +11,10 @@ $(document).on('scroll', function() {
         $mainSection.removeClass('activeTypography')
     }
   })
+
+  var screenWidth = $(window).width();
+  if(screenWidth < 1024) {
+      $('.projectRedirect').on('click', function(e) {
+        e.preventDefault();
+      })
+  }

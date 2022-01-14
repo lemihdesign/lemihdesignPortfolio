@@ -57,44 +57,40 @@
             overflow-y: hidden;
 
             .box {
-                .letterContainer {
-                    .letterDescription {
-                        left: -100%;
-                        width: 100%;
-                        font-size: 13px;
-                    }
-
-                    .letterDescription.second {
-                        top: 200px;
-                    }
-
-                    .letterDescription.thrid {
-                        top: 200px;
-                    }
-
-                    h3 {
-                        font-size: 42px;
-                    }
+                h3 {
+                    font-size: 42px;
                 }
+            }
 
-                .letterContainer.second {
-                    h3 {
-                        font-size: 42px;
-                    }
+            .box.first {
+                .letterDescription.first {
+                    width: 100%;
+                    top: 70%;
                 }
+            }
 
-                .letterContainer.third {
-                    h3 {
-                        font-size: 42px;
-                    }
+            .box.second {
+                .letterDescription.second {
+                    width: 100%;
+                    top: 70%;
+                }
+            }
+
+            .box.third {
+                .letterDescription.third {
+                    width: 100%;
+                    top: 70%;
                 }
             }
         }
     }
 
     section.main-section.activeTypography {
+        height: 100%;
+
         .mainSectionContainer {
             .box.first {
+                height: 100%;
 
                 h3.letter1,
                 h3.letter2,
@@ -165,9 +161,14 @@
                     top: 50%;
                     left: 284px;
                 }
+
+                .letterDescription.first {
+                    animation: slideFromLeft .3s 1s ease-in-out both;
+                }
             }
 
             .box.second {
+                height: 100%;
 
                 h3.letter1,
                 h3.letter2,
@@ -214,9 +215,14 @@
                     top: 50%;
                     left: 153px;
                 }
+
+                .letterDescription.second {
+                    animation: slideFromLeft .3s 1s ease-in-out both;
+                }
             }
 
             .box.third {
+                height: 500px;
 
                 h3.letter1,
                 h3.letter2,
@@ -257,6 +263,11 @@
                     top: 50%;
                     left: 159px;
                 }
+
+                .letterDescription.third {
+                    top: 63%;
+                    animation: slideFromLeft .3s 1s ease-in-out both;
+                }
             }
         }
     }
@@ -264,131 +275,186 @@
     section.projects {
         .projectsContainer {
             .box {
-                height: 100px;
+                position: relative;
+                height: 150px;
 
                 .title {
                     h2 {
+                        line-height: 150px;
                         font-size: 32px;
                     }
+                }
+
+                .subtitle {
+                    h2 {
+                        text-transform: none;
+                        font-size: 14px;
+                        margin-top: 0;
+                    }
+
+                    .technologies {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+
+                        span {
+                            width: 70px;
+                            height: 25px;
+                            padding: 5px;
+                            font-size: 10px;
+                            margin-right: 10px;
+                            text-align: center;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                .imageForMobile {
+                    display: block;
+                    width: 300px;
+                    height: 300px;
+                    background-image: url('../src/projects/e-volunteer/mockupsImages/wolontariuszDemo.png');
+                    background-size: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin: 25px auto;
+                }
+            }
+
+            .box:hover {
+                height: 500px;
+
+                .btnForMobile {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: block;
+                    padding: 10px;
+                    border: none;
+                    background-color: $colorPink;
+                    @include fontDeclaration($fontPoppins, 12px, #fff);
+                    border-radius: 10px;
+                    cursor: pointer;
                 }
             }
         }
     }
-}
 
-/* Projects site */
-.webContainer {
-    .wrapper {
-        padding: 50px 0;
+    /* Projects site */
+    .webContainer {
+        .wrapper {
+            padding: 50px 0;
 
-        section.projectHeader {
-            .projectTitle {
-                flex-wrap: wrap;
-
-                h1 {
-                    font-size: 32px;
-                    letter-spacing: 3px;
-                }
-
-                p.margin {
-                    margin-top: 15px;
-                    font-size: 13px;
-                }
-
-                button {
-                    padding: 10px 5px;
-                    margin-top: 15px;
-                    font-size: 13px;
-                }
-
-                .technologies {
+            section.projectHeader {
+                .projectTitle {
                     flex-wrap: wrap;
-                    margin-top: 10px;
 
-                    span {
-                        width: auto;
-                        padding: 5px 10px;
-                        font-size: 12px;
+                    h1 {
+                        font-size: 32px;
+                        letter-spacing: 3px;
                     }
-                }
-            }
 
-            .projectDescriptionText {
-                width: 100%;
-                margin-top: 200px;
-            }
+                    p.margin {
+                        margin-top: 15px;
+                        font-size: 13px;
+                    }
 
-            .imageSection {
-                margin: 50px 0;
-                width: 100vw;
-            }
-        }
+                    button {
+                        padding: 10px 5px;
+                        margin-top: 15px;
+                        font-size: 13px;
+                    }
 
-        .projectDescription {
-            .content {
-                width: 100%;
-                margin-top: -75px;
+                    .technologies {
+                        flex-wrap: wrap;
+                        margin-top: 10px;
 
-                .colContainer {
-                    flex-direction: column;
-                    width: 100%;
-
-                    .col {
-                        width: 100%;
-                        margin: 15px 0;
-
-                        h2 {
+                        span {
+                            width: auto;
+                            padding: 5px 10px;
                             font-size: 12px;
                         }
+                    }
+                }
 
-                        ul {
-                            li {
-                                margin-left: 15px;
+                .projectDescriptionText {
+                    width: 100%;
+                    margin-top: 200px;
+                }
+
+                .imageSection {
+                    margin: 50px 0;
+                    width: 100vw;
+                }
+            }
+
+            .projectDescription {
+                .content {
+                    width: 100%;
+                    margin-top: -75px;
+
+                    .colContainer {
+                        flex-direction: column;
+                        width: 100%;
+
+                        .col {
+                            width: 100%;
+                            margin: 15px 0;
+
+                            h2 {
+                                font-size: 12px;
+                            }
+
+                            ul {
+                                li {
+                                    margin-left: 15px;
+                                }
                             }
                         }
                     }
                 }
-            }
 
-            .content.second {
-                flex-direction: column;
-                margin-top: 50px;
+                .content.second {
+                    flex-direction: column;
+                    margin-top: 50px;
 
-                .mobileOnly {
-                    display: block;
-                    margin-bottom: 15px;
-                }
-
-                .left.first {
-                    width: 100%;
-                    height: 31vh;
-                }
-
-                .right.first {
-                    width: 100%;
-                    padding: 15px 0;
-
-                    h2.hide {
-                        display: none;
+                    .mobileOnly {
+                        display: block;
+                        margin-bottom: 15px;
                     }
 
-                    p {
+                    .left.first {
                         width: 100%;
-                        padding-left: 0;
+                        height: 31vh;
+                    }
+
+                    .right.first {
+                        width: 100%;
+                        padding: 15px 0;
+
+                        h2.hide {
+                            display: none;
+                        }
+
+                        p {
+                            width: 100%;
+                            padding-left: 0;
+                        }
                     }
                 }
-            }
 
-            .content.third {
-                margin-top: -150px;
-            }
+                .content.third {
+                    margin-top: -150px;
+                }
 
-            .content.fourth {
-                margin-top: -150px;
+                .content.fourth {
+                    margin-top: -150px;
 
-                img {
-                    width: 100%;
-                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }
