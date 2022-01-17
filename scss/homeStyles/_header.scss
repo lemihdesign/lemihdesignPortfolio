@@ -40,16 +40,6 @@ header.mainSiteHeader {
         animation: colorChangeSpan 3s 2.8s infinite alternate-reverse;
     }
 
-    p.scrollDown {
-        position: absolute;
-        top: 96vh;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        @include fontDeclaration($fontPoppins, 13px, $colorDark);
-        opacity: 0;
-        animation: show .8s 3s linear both;
-    }
-
     svg {
         width: 200px;
         height: 200px;
@@ -68,30 +58,33 @@ header.mainSiteHeader {
         animation: animate 2s linear both, colorAnimation .5s 2.8s linear both, colorChange 3s 2.8s linear infinite alternate-reverse;
     }
 
-    button {
+    .scrollDownIcon {
         position: absolute;
         top: 90vh;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 20px;
-        height: 35px;
-        background-color: transparent;
-        border: 2px solid $colorDark;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        opacity: 0;
-        animation: show .8s 3s linear both;
-    }
 
-    .dot {
-        width: 5px;
-        height: 5px;
-        display: block;
-        background-color: $colorBlue;
-        border-radius: 50%;
-        margin-top: 5px;
-        animation: moveScrollDot 1s linear infinite, colorChangeSpan 3s infinite alternate-reverse;
+        button {
+            width: 20px;
+            height: 35px;
+            background-color: transparent;
+            border: 2px solid $colorDark;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            animation: show .8s 3s linear both;
+        }
+
+        .dot {
+            width: 5px;
+            height: 5px;
+            display: block;
+            background-color: $colorBlue;
+            border-radius: 50%;
+            margin-top: 5px;
+            animation: moveScrollDot 1s linear infinite, colorChangeSpan 3s infinite alternate-reverse;
+        }
     }
 }
 

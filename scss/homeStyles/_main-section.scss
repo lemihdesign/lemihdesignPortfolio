@@ -1,24 +1,38 @@
 section.main-section {
     width: 100%;
-    min-height: 110vh;
     height: 100%;
     cursor: crosshair;
+    background-color: #ffffff;
     // overflow-x: hidden;
+    margin-top: 250px;
 
     .mainSectionContainer {
+        position: relative;
         width: 95%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        align-content: space-between;
-        margin: 0 auto;
+        align-content: space-around;
+        margin: 100px auto 0 auto;
+
+        h2 {
+            @include fontDeclaration($fontPoppins, 18px, $colorDark);
+            margin-top: 150px;
+            text-transform: uppercase;
+        }
+
+        p {
+            @include fontDeclaration($fontPoppins, 15px, $colorDark);
+            line-height: 30px;
+            margin-top: 15px;
+        }
 
         .box.first {
             position: relative;
             width: 100%;
-            min-height: 300px;
+            min-height: 100px;
             height: 100%;
-            margin-top: 10px;
+            // margin-top: -75px;
 
             h3 {
                 font-family: $fontGilroyHeavy;
@@ -91,14 +105,15 @@ section.main-section {
                 top: 70%;
                 left: -100%;
                 width: 1300px;
-                @include fontDeclaration($fontPoppins, 14px, $colorDark);
+                @include fontDeclaration($fontPoppins, 15px, #fff);
+                line-height: 30px;
             }
         }
 
         .box.second {
             position: relative;
             width: 100%;
-            min-height: 300px;
+            min-height: 100px;
             height: 100%;
             margin-top: 10px;
 
@@ -151,17 +166,18 @@ section.main-section {
 
             .letterDescription.second {
                 position: absolute;
-                top: 70%;
+                top: 74%;
                 left: -100%;
                 width: 1300px;
-                @include fontDeclaration($fontPoppins, 14px, $colorDark);
+                @include fontDeclaration($fontPoppins, 15px, #fff);
+                line-height: 30px;
             }
         }
 
         .box.third {
             position: relative;
             width: 100%;
-            min-height: 300px;
+            min-height: 100px;
             height: 100%;
             margin-top: 10px;
 
@@ -212,7 +228,8 @@ section.main-section {
                 top: 75%;
                 left: -130%;
                 width: 1300px;
-                @include fontDeclaration($fontPoppins, 14px, $colorDark);
+                @include fontDeclaration($fontPoppins, 15px, #fff);
+                line-height: 30px;
             }
         }
 
@@ -237,7 +254,7 @@ section.main-section {
     }
 }
 
-section.main-section:hover {
+section.main-section.activeTypography {
     .mainSectionContainer {
         .box.first {
             h3.letter1 {

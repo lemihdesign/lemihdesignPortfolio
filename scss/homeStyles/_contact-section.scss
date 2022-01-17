@@ -2,5 +2,105 @@ section.contact-section {
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    background-color: $colorDark;
+    background-color: #fff;
+    cursor: crosshair;
+    margin-top: 250px;
+
+    .contactSectionContainer {
+        display: flex;
+        width: 95%;
+        height: 100%;
+        margin: 100px auto 0 auto;
+
+        aside.left {
+            width: 40%;
+            height: 100%;
+
+            h2 {
+                @include fontDeclaration($fontPoppins, 18px, $colorDark);
+                text-transform: uppercase;
+            }
+
+            p {
+                @include fontDeclaration($fontPoppins, 15px, $colorDark);
+                margin: 15px 0;
+            }
+
+            span {
+                @include fontDeclaration($fontPoppins, 15px, $colorDark);
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+
+                i {
+                    font-size: 20px;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        aside.right {
+            width: 60%;
+            height: 100%;
+
+            .formContainer {
+                width: 100%;
+                height: 100%;
+                padding-left: 100px;
+
+                form {
+                    label {
+                        display: block;
+                        @include fontDeclaration($fontPoppins, 13px, $colorDark);
+                        margin: 35px 0 0 10px;
+                    }
+
+                    label.first {
+                        margin-top: -35px;
+                    }
+
+                    input {
+                        width: 100%;
+                        display: block;
+                        height: 45px;
+                        margin-top: 15px;
+                        border: none;
+                        border-bottom: 1px solid $colorDark;
+                        @include fontDeclaration($fontPoppins, 14px, $colorDark);
+                        padding-left: 10px;
+                    }
+
+                    input[type="submit"] {
+                        width: 20%;
+                        border: none;
+                        background-color: $colorPink;
+                        @include fontDeclaration($fontPoppins, 14px, #fff);
+                        text-align: center;
+                        padding: 0;
+                        cursor: pointer;
+                        transition: .4s;
+                    }
+
+                    input[type="submit"]:hover {
+                        box-shadow: 0 0 13px 3px rgb(239, 16, 85);
+                    }
+
+                    ::placeholder {
+                        @include fontDeclaration($fontPoppins, 14px, $colorLightDark);
+                    }
+
+                    textarea {
+                        width: 100%;
+                        min-height: 300px;
+                        height: 100%;
+                        margin-top: 25px;
+                        resize: none;
+                        border: 1px solid $colorDark;
+                        @include fontDeclaration($fontPoppins, 14px, $colorDark);
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
 }

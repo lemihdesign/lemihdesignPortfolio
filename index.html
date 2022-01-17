@@ -13,18 +13,90 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav>
+        <div class="hamburgerContainer">
+            <div class="hamburgerBox">
+                <button class="hamburger">
+                    <span class="hamburgerInner"></span>
+                </button>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#aboutMe">O mnie</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
     <header class="mainSiteHeader">
         <h1 class="nameTitle">lemihdesign</h1>
         <p class="jobTitle"><span>FRONTEND DEVELOPER</span></p>
         <svg width="842" height="855" viewBox="0 0 842 855" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="draw" d="M470.949 229.308L472.313 230.771L476.026 227.308H470.949V229.308ZM275.589 411.468L274.225 410.005L273.589 410.598V411.468H275.589ZM275.589 420.268H273.589V422.268H275.589V420.268ZM430.469 438.748L429.021 440.127L429.054 440.163L429.089 440.196L430.469 438.748ZM448.949 660.508V662.508H450.949V660.508H448.949ZM378.549 660.508H376.549V662.508H378.549V660.508ZM378.549 475.708H380.549V473.708H378.549V475.708ZM149.749 475.708V473.708H147.749V475.708H149.749ZM149.749 660.508V662.508H151.749V660.508H149.749ZM79.3488 660.508H77.3488V662.508H79.3488V660.508ZM79.3488 229.308V227.308H77.3488V229.308H79.3488ZM149.749 229.308H151.749V227.308H149.749V229.308ZM149.749 464.268H147.749V469.109L151.166 465.68L149.749 464.268ZM383.829 229.308V227.308H382.998L382.412 227.896L383.829 229.308ZM469.585 227.845L274.225 410.005L276.953 412.931L472.313 230.771L469.585 227.845ZM273.589 411.468V420.268H277.589V411.468H273.589ZM275.589 422.268H387.349V418.268H275.589V422.268ZM387.349 422.268C403.815 422.268 417.665 428.204 429.021 440.127L431.917 437.369C419.806 424.652 404.909 418.268 387.349 418.268V422.268ZM429.089 440.196C441.013 451.552 446.949 465.402 446.949 481.868H450.949C450.949 464.307 444.564 449.411 431.848 437.3L429.089 440.196ZM446.949 481.868V660.508H450.949V481.868H446.949ZM448.949 658.508H378.549V662.508H448.949V658.508ZM380.549 660.508V475.708H376.549V660.508H380.549ZM378.549 473.708H149.749V477.708H378.549V473.708ZM147.749 475.708V660.508H151.749V475.708H147.749ZM149.749 658.508H79.3488V662.508H149.749V658.508ZM81.3488 660.508V229.308H77.3488V660.508H81.3488ZM79.3488 231.308H149.749V227.308H79.3488V231.308ZM147.749 229.308V464.268H151.749V229.308H147.749ZM151.166 465.68L385.246 230.72L382.412 227.896L148.332 462.856L151.166 465.68ZM383.829 231.308H470.949V227.308H383.829V231.308ZM831.818 660.508V662.508H833.818V660.508H831.818ZM523.818 660.508H521.818V662.508H523.818V660.508ZM523.818 229.308V227.308H521.818V229.308H523.818ZM594.218 229.308H596.218V227.308H594.218V229.308ZM594.218 598.908H592.218V600.908H594.218V598.908ZM761.418 598.908V600.908H763.418V598.908H761.418ZM761.418 537.308V535.308H759.418V537.308H761.418ZM831.818 537.308H833.818V535.308H831.818V537.308ZM831.818 658.508H523.818V662.508H831.818V658.508ZM525.818 660.508V229.308H521.818V660.508H525.818ZM523.818 231.308H594.218V227.308H523.818V231.308ZM592.218 229.308V598.908H596.218V229.308H592.218ZM594.218 600.908H761.418V596.908H594.218V600.908ZM763.418 598.908V537.308H759.418V598.908H763.418ZM761.418 539.308H831.818V535.308H761.418V539.308ZM829.818 537.308V660.508H833.818V537.308H829.818Z"/>
         </svg>
-        <button><span class="dot"></span></button>
-        <p class="scrollDown">SCROLL DOWN</p>
+        <span class="scrollDownIcon">
+            <button><span class="dot"></span></button>
+        </span>
     </header>
+
+    <section class="aboutMe-section" id="aboutMe">
+        <div class="aboutMe-container">
+            <div class="top">
+                <h2>Nazywam się <span>KACPER LEMISZEWSKI</span> <span class="mobile">i jestem początkującym</span> <span class="jobTitle">FRONTEND DEVELOPEREM</span><span class="pink">.</span></h2>
+                <p>Skoro już się poznaliśmy to pora lepiej się przedstawić. Ukończyłem studia inżynierskie na Politechnice Wrocławskiej i rozglądam się za pierwszą pracą w zawodzie. Jestem samoukiem, który dąży do zdobywania doświadczenia jako Frontend Developer. Jeszcze parę lat temu, gdy byłem uczniem gimnazjum, hobbistycznie wykonywałem layouty stron internetowych. Naturalna ciekawość zachęciła mnie do zainteresowania się tematem zamiany projektu graficznego na realną stronę internetową, widzianą z poziomu okna przeglądarki. Tym samym rozpocząłem swoją przygodę z kodowaniem, która nabrała dużego tempa dopiero na studiach. Na trzecim roku wykonałem kilka większych projektów, które zapewniły mi zauważalny progres umiejętności i dały mi kopa do dalszej pracy. Jeden z nich był projektem grupowym, który pozwolił mi na zdobycie pierwszego doświadczenia w pracy z wykorzystaniem <span>metodologii SCRUM</span> i takich narzędzi jak <span>Mural</span>, <span>Jira</span> czy <span>GitHub</span>.</p>
+            </div>
+            <div class="bottom">
+                <div class="bottomContainer">
+                    <h2>co mogę <span>zaoferować</span><span class="pink">?</span></h2>
+                    <p>Tak jak wspomniałem na codzień rozwijam się w kierunku technologii związanych z Frontend'em. Aczkolwiek nie zamykam się tylko na to. Moje strony internetowe używają również rozwiązań backendowych. Na obecną chwilę mógłbym sporządzić następującą listę języków/bibliotek, z którymi miałem styczność i których używałem przy swoich projektach.</p>
+                    <div class="technologiesColumns">
+                        <div class="col">
+                            <h3>frontend</h3>
+                            <ul>
+                                <li>HTML,</li>
+                                <li>CSS3,</li>
+                                <li>SASS,</li>
+                                <li>SCSS,</li>
+                                <li>Javascipt,</li>
+                                <li>jQuery,</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>backend</h3>
+                            <ul>
+                                <li>PHP,</li>
+                                <li>MySQL,</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>oprogramowanie i narzędzia</h3>
+                            <ul>
+                                <li>Visual Studio Code,</li>
+                                <li>Jira,</li>
+                                <li>Mural,</li>
+                                <li>Miro,</li>
+                                <li>Github,</li>
+                                <li>Adobe XD,</li>
+                                <li>Figma,</li>
+                                <li>Adobe Photoshop</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>To czego chcę się nauczyć</h3>
+                            <ul>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="main-section">
         <div class="mainSectionContainer">
+            <!-- <h2>to jest dla mnie najważniejsze</h2>
+            <p>Podczas swojej codziennej pracy kieruje się trzema podstawowymi zasadami. Chcę aby każdy z mój projektów wyróżniał się kreatywnością. Staram się aby każdy z nich zawierał coś unikalnego, czego wcześniej nie używałem na stronach internetowych. Pozwala mi to na jeszcze większy rozwój, który również jest dla mnie ważnym elementem.  </p> -->
             <div class="box first">
                 <h3 class="letter1">K</h3>
                 <h3 class="letter2">R</h3>
@@ -37,7 +109,7 @@
                 <h3 class="letter9">O</h3>
                 <h3 class="letter10">Ś</h3>
                 <h3 class="letter11">Ć</h3>
-                <p class="letterDescription first">Staram się aby każdy mój projekt wyróżniał się czymś szczególnym.</p>
+                <!-- <p class="letterDescription first">Staram się aby każdy mój projekt wyróżniał się czymś szczególnym. </p> -->
             </div>
             <div class="box second">
                 <h3 class="letter1">A</h3>
@@ -47,7 +119,7 @@
                 <h3 class="letter5">C</h3>
                 <h3 class="letter6">J</h3>
                 <h3 class="letter7">E</h3>
-                <p class="letterDescription second">Lubie duże projekty. Mam doświadczenie w pracy w zespole z wykorzystaniem metodologii SCRUM. Uważam, że praca nad dużą stroną internetową pozwala na duży rozwój. </p>
+                <!-- <p class="letterDescription second">Chcę się ciągle rozwijać, a jak wiadomo najlepiej jest to robić poprzez realizację nowych interesujących projektów. Staram się tworzyć większe strony internetowe, które realizują jakieś działania i przy okazji mogą być pomocne dla społeczeństwa.</p> -->
             </div>
             <div class="box third">
                 <h3 class="letter1">R</h3>
@@ -56,7 +128,7 @@
                 <h3 class="letter4">W</h3>
                 <h3 class="letter5">Ó</h3>
                 <h3 class="letter6">J</h3>
-                <p class="letterDescription third">Podnoszenie swoich kwalifikacji jest dla mnie bardzo ważne. Codziennie dąże do rozwoju ucząć się i tworząc własne projekty. Chciałbym móc uczyć się od najlepszych dlatego zachęcam do przejrzenia moich projektów i do kontaktu.</p>
+                <!-- <p class="letterDescription third">Podnoszenie swoich kwalifikacji jest dla mnie bardzo ważne. Codziennie dąże do rozwoju ucząć się i tworząc własne projekty. Chciałbym móc uczyć się od najlepszych dlatego zachęcam do przejrzenia moich projektów i do kontaktu.</p> -->
             </div>
             <span class="projectsArrowLabel">
                 <p>projekty</p>
@@ -65,9 +137,10 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="projectsContainer">
             <h2 class="projectsLabel">wybrane projekty</h2>
+            <p>W swoim portfolio nie zamieściłem wielu projektów. Dodałem jedynie te, które są większe i dodatkowo są w miarę nowe. Projekt, z którego jestem najbardziej dumny to zdecydowanie ten związany z moją pracą inżynierską - E-Wolontariusz.</p>
             <a href="wolontariusz.html" class="projectRedirect">
                 <div class="box">
                     <div class="title">
@@ -86,6 +159,7 @@
                             <span class="software">Figma</span>
                         </div>
                     </div>
+                    <div class="image first"></div>
                     <div class="imageForMobile"></div>
                     <a href="wolontariusz.html"><button class="btnForMobile">Szczegóły</button></a>
                 </div>
@@ -125,58 +199,38 @@
         </div>
     </section>
 
-    <section class="aboutMe-section">
-        <div class="aboutMe-container">
-            <div class="columns">
-                <aside class="left">
-                    <h2>o mnie</h2>
-                    <div class="imageBox"></div>
-                </aside>
-                <aside class="right">
-                    <p>Cześć, miło Cię gościć na mojej stronie. Mam na imię Kacper i pochodzę z Jeleniej Góry. Właśnie ukończyłem studia inżynierskie na Politechnice Wrocławskiej i rozglądam się za pierwszą pracą w zawodzie. Jestem samoukiem, który dąży do zdobywania doświadczenia jako Frontend Developer. Jeszcze parę lat temu, gdy byłem uczniem gimnazjum, hobbistycznie wykonywałem layouty stron internetowych. Naturalna ciekawość zachęciła mnie do zainteresowania się tematem zamiany projektu graficznego na realną stronę internetową, widzianą z poziomu okna przeglądarki. Tym samym rozpocząłem swoją przygodę z kodowaniem, która nabrała dużego tempa dopiero na studiach. Na trzecim roku wykonałem kilka większych projektów, które zapewniły mi zauważalny progres umiejętności i dały mi kopa do dalszej pracy. Jeden z nich był projektem grupowym, który pozwolił mi na zdobycie pierwszego doświadczenia w pracy z wykorzystaniem metodologii SCRUM i takich narzędzi jak Mural, Jira czy GitHub. W swoim portfolio nie zamieściłem wielu projektów. Dodałem jedynie te, które są większe i dodatkowo są w miarę nowe. Projekt, z którego jestem najbardziej dumny to zdecydowanie ten związany z moją pracą inżynierską - E-Wolontariusz. Został on zamieszczony na stronie, dlatego zachęcam Cię do przejrzenia w wolnej chwilii.</p>
-                </aside>
-            </div>
-            <div class="bottom">
-                <div class="bottomContainer">
-                    <h2>technologie</h2>
-                    <h3>backend</h3>
-                    <ul>
-                        <li>PHP,</li>
-                        <li>MySQL</li>
-                    </ul>
-                    <h3>frontend</h3>
-                    <ul>
-                        <li>HTML,</li>
-                        <li>CSS3,</li>
-                        <li>SASS,</li>
-                        <li>SCSS,</li>
-                        <li>Javascipt,</li>
-                        <li>jQuery,</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                    <h3>oprogramowanie i narzędzia</h3>
-                    <ul>
-                        <li>Visual Studio Code,</li>
-                        <li>Jira,</li>
-                        <li>Mural,</li>
-                        <li>Miro,</li>
-                        <li>Github,</li>
-                        <li>Adobe XD,</li>
-                        <li>Figma,</li>
-                        <li>Adobe Photoshop</li>
-                    </ul>
-                    <h3>To czego chcę się nauczyć</h3>
-                    <ul>
-                        <li>React</li>
-                    </ul>
+    <section class="contact-section" id="contact">
+        <div class="contactSectionContainer">
+            <aside class="left">
+                <h2>porozmawiajmy</h2>
+                <p>Chętnie odpowiem na Twoje pytania. Poniżej znajdują się odnośniki do moich profili jak i formularz kontaktowy.</p>
+                <span><i class="fas fa-map-marker-alt"></i> Jelenia Góra, Poland</span>
+                <span><i class="fab fa-linkedin"></i> Linkedin</span>
+                <span><i class="fab fa-github-square"></i> Github</span>
+            </aside>
+            <aside class="right">
+                <div class="formContainer">
+                    <form action="#" method="POST">
+                        <label for="name" class="fist">Cześć, mam na imię</label>
+                        <input type="text" class="first" id="name" placeholder="Twoje imię">
+                        <label for="email">Piszę do Ciebie z adresu</label>
+                        <input type="text" id="email" placeholder="Twoj adres e-mail">
+                        <label for="message">Treść mojej wiadomości</label>
+                        <textarea name="" id="message"></textarea>
+                        <input type="submit" value="Wyślij">
+                    </form>
                 </div>
-            </div>
+            </aside>
         </div>
     </section>
 
-    <section class="contact-section"></section>
+    <footer>
+        <p>&copy; 2022 Kacper Lemiszewski</p>
+        <p>Free Mockups from <a href="www.freepik.com">www.freepik.com</a></p>
+    </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/mainSite.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
 
 </body>
 </html>

@@ -18,6 +18,92 @@
 
 @media(max-width: 1024px) {
 
+    /* Navigation */
+    nav {
+        width: 100%;
+        height: 70px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #fff;
+        overflow: hidden;
+
+        ul {
+            width: 100%;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            li {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 10px;
+                line-height: 50px;
+            }
+        }
+
+        .hamburgerContainer {
+            width: 95%;
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            margin-right: 10px;
+
+            .hamburgerBox {
+                width: 30px;
+                height: 50px;
+
+                .hamburger {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    background-color: transparent;
+
+                    .hamburgerInner {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+                        height: 3px;
+                        display: block;
+                        background-color: $colorDark;
+                    }
+
+                    .hamburgerInner::after {
+                        position: absolute;
+                        top: 10px;
+                        left: 0;
+                        content: '';
+                        width: 110%;
+                        height: 3px;
+                        display: block;
+                        background-color: $colorDark;
+                    }
+
+                    .hamburgerInner::before {
+                        position: absolute;
+                        top: -10px;
+                        left: 0;
+                        content: '';
+                        width: 90%;
+                        height: 3px;
+                        display: block;
+                        background-color: $colorDark;
+                    }
+                }
+            }
+        }
+    }
+
+    nav.navigation--active {
+        height: 100vh;
+    }
+
     /* Main site */
     header.mainSiteHeader {
         h1.nameTitle {
@@ -50,19 +136,77 @@
         }
     }
 
+    section.aboutMe-section {
+        .aboutMe-container {
+            .top {
+
+                h2 {
+                    font-size: 19px;
+                    width: 100%;
+                    line-height: 40px;
+
+                    span {
+                        font-size: 20px;
+                    }
+
+                    span.mobile {
+                        font-size: 19px;
+                        color: $colorLightGray;
+                    }
+
+                    span.jobTitle {
+                        font-size: 26px;
+                        display: inline-block;
+                    }
+
+                    span.pink {
+                        display: inline-block;
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            .bottom {
+                .bottomContainer {
+                    .technologiesColumns {
+                        flex-direction: column;
+
+                        .col {
+                            width: 100%;
+
+                            h3 {
+                                margin-bottom: 15px;
+                            }
+
+                            ul {
+                                li {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     section.main-section {
+        margin-top: 50px;
+
         .mainSectionContainer {
-            min-height: 110vh;
             height: 100%;
             overflow-y: hidden;
 
             .box {
+
                 h3 {
                     font-size: 42px;
                 }
             }
 
             .box.first {
+                height: 100%;
+
                 .letterDescription.first {
                     width: 100%;
                     top: 70%;
@@ -70,6 +214,8 @@
             }
 
             .box.second {
+                height: 100%;
+
                 .letterDescription.second {
                     width: 100%;
                     top: 70%;
@@ -77,11 +223,17 @@
             }
 
             .box.third {
+                height: 100%;
+
                 .letterDescription.third {
                     width: 100%;
                     top: 70%;
                 }
             }
+        }
+
+        .projectsArrowLabel {
+            display: none;
         }
     }
 
@@ -89,8 +241,10 @@
         height: 100%;
 
         .mainSectionContainer {
+            height: 100%;
+
             .box.first {
-                height: 100%;
+                height: 75px;
 
                 h3.letter1,
                 h3.letter2,
@@ -114,52 +268,52 @@
 
                 h3.letter2 {
                     top: 50%;
-                    left: 27px;
+                    left: 40px;
                 }
 
                 h3.letter3 {
                     top: 50%;
-                    left: 53px;
+                    left: 64px;
                 }
 
                 h3.letter4 {
                     top: 50%;
-                    left: 77px;
+                    left: 90px;
                 }
 
                 h3.letter5 {
                     top: 50%;
-                    left: 103px;
+                    left: 112px;
                 }
 
                 h3.letter6 {
                     top: 50%;
-                    left: 127px;
+                    left: 138px;
                 }
 
                 h3.letter7 {
                     top: 50%;
-                    left: 157px;
+                    left: 175px;
                 }
 
                 h3.letter8 {
                     top: 50%;
-                    left: 199px;
+                    left: 210px;
                 }
 
                 h3.letter9 {
                     top: 50%;
-                    left: 227px;
+                    left: 240px;
                 }
 
                 h3.letter10 {
                     top: 50%;
-                    left: 260px;
+                    left: 268px;
                 }
 
                 h3.letter11 {
                     top: 50%;
-                    left: 284px;
+                    left: 296px;
                 }
 
                 .letterDescription.first {
@@ -168,7 +322,7 @@
             }
 
             .box.second {
-                height: 100%;
+                height: 75px;
 
                 h3.letter1,
                 h3.letter2,
@@ -222,7 +376,7 @@
             }
 
             .box.third {
-                height: 500px;
+                height: 75px;
 
                 h3.letter1,
                 h3.letter2,
@@ -273,10 +427,22 @@
     }
 
     section.projects {
+        position: relative;
+        margin-top: 50px;
+        height: 100%;
+
         .projectsContainer {
+            padding: 0;
+
+            p {
+                margin: 25px 0 25px 0;
+
+            }
+
             .box {
                 position: relative;
                 height: 150px;
+                background-color: #fff;
 
                 .title {
                     h2 {
@@ -309,6 +475,10 @@
                     }
                 }
 
+                .image {
+                    display: none;
+                }
+
                 .imageForMobile {
                     display: block;
                     width: 300px;
@@ -339,6 +509,44 @@
                 }
             }
         }
+    }
+
+    section.contact-section {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+
+        .contactSectionContainer {
+            flex-direction: column;
+            width: 95%;
+            height: 100%;
+            margin: 50px auto 0 auto;
+
+            aside.left {
+                width: 100%;
+                height: 100%;
+            }
+
+            aside.right {
+                width: 100%;
+                height: 100%;
+
+                .formContainer {
+                    padding: 0;
+
+                    form {
+                        input[type="submit"] {
+                            width: 50%;
+                            margin: 25px auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 50px;
     }
 
     /* Projects site */

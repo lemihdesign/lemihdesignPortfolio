@@ -1,11 +1,13 @@
 footer {
-    width: 100%;
+    width: 95%;
     height: 50px;
-    @include fontDeclaration($fontPoppins, 15px, $colorLightDark);
+    @include fontDeclaration($fontPoppins, 15px, $colorDark);
+    margin: 0 auto 50px auto;
+    cursor: crosshair;
 
     a {
         text-decoration: none;
-        color: $colorLightDark;
+        color: $colorDark;
         cursor: pointer;
     }
 }
