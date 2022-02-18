@@ -1,10 +1,20 @@
 .aboutMe-section {
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #000;
     cursor: crosshair;
-    padding-top: 100px;
+    padding-top: 50px;
+
+    h1 {
+        text-align: center;
+        @include fontDeclaration($fontPoppins, 18px, #fff);
+        font-weight: 800;
+
+        span {
+            color: $colorPink;
+        }
+    }
 
     .aboutMe-container {
         width: 95%;
@@ -12,112 +22,49 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-
-        /* .columns {
-            display: flex;
-            flex-direction: row;
-
-            aside {
-                height: 55vh;
-            }
-
-            aside.left {
-                width: 40%;
-
-                h2 {
-                    @include fontDeclaration($fontGilroyHeavy, 16px, $colorDark);
-                    text-transform: uppercase;
-                }
-
-                .imageBox {
-                    width: 250px;
-                    height: 350px;
-                    display: block;
-                    background-image: url('../src/projects/e-volunteer/rawImages/img041.jpg');
-                    background-size: 100%;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    // border-radius: 30% 50% 45% 37%;
-                    margin: 0 auto;
-                    // box-shadow: 0 0 2px 2px $colorPink
-                    // 0 0 5px 4px $colorBlue;
-                }
-            }
-
-            aside.right {
-                width: 60%;
-                display: flex;
-                align-items: center;
-
-                p {
-                    @include fontDeclaration($fontPoppins, 15px, $colorDark);
-                    width: 80%;
-                    text-align: justify;
-                    line-height: 25px;
-                }
-            }
-        }
-
-        .bottom {
-            width: 100%;
-            height: 45vh;
-
-            .bottomContainer {
-                width: 60%;
-                margin: 0 auto;
-                padding-top: 50px;
-
-                h2 {
-                    @include fontDeclaration($fontGilroyHeavy, 16px, $colorDark);
-                    text-transform: uppercase;
-                    text-align: center
-                }
-
-                h3 {
-                    @include fontDeclaration($fontPoppins, 14px, $colorDark);
-                    text-transform: uppercase;
-                    margin-top: 20px;
-                }
-
-                ul {
-                    li {
-                        display: inline-block;
-                        @include fontDeclaration($fontPoppins, 16px, $colorDark);
-                    }
-                }
-            }
-        } */
+        padding-top: 100px;
 
         .top {
             width: 100%;
             height: 100%;
 
             h2 {
-                @include fontDeclaration($fontGilroyHeavy, 38px, $colorLightGray);
-                // text-transform: uppercase;
-                width: 1200px;
+                @include fontDeclaration($fontPoppins, 20px, #fff);
 
                 span {
-                    color: $colorDark;
-                    font-size: 48px;
-                }
-
-                span.pink {
-                    color: $colorPink;
-                }
-
-                span.jobTitle {
-                    font-size: 64px;
+                    // color: $colorPink;
+                    // font-weight: 800;
                 }
             }
 
             p {
-                @include fontDeclaration($fontPoppins, 15px, $colorDark);
+                @include fontDeclaration($fontPoppins, 15px, #fff);
                 margin-top: 25px;
                 line-height: 30px;
 
                 span {
                     color: $colorPink;
+                    font-weight: 800;
+                }
+            }
+
+            .technologiesColumns {
+                width: 100%;
+                display: flex;
+                margin-top: 50px;
+
+                .col {
+                    width: 25%;
+
+                    h3 {
+                        @include fontDeclaration($fontPoppins, 15px, #fff);
+                        text-transform: uppercase;
+                        margin-top: 25px;
+                    }
+
+                    ul {
+                        @include fontDeclaration($fontPoppins, 14px, #fff);
+                    }
                 }
             }
         }
@@ -127,35 +74,17 @@
             height: 100%;
 
             .bottomContainer {
+                padding-top: 150px;
+
                 h2 {
                     @include fontDeclaration($fontPoppins, 18px, $colorDark);
-                    margin-top: 35px;
-                    text-transform: uppercase;
+                    text-align: center;
                 }
 
                 p {
                     @include fontDeclaration($fontPoppins, 15px, $colorDark);
                     margin-top: 10px;
                     line-height: 30px;
-                }
-
-                .technologiesColumns {
-                    width: 100%;
-                    display: flex;
-
-                    .col {
-                        width: 25%;
-
-                        h3 {
-                            @include fontDeclaration($fontPoppins, 15px, $colorDark);
-                            text-transform: uppercase;
-                            margin-top: 25px;
-                        }
-
-                        ul {
-                            @include fontDeclaration($fontPoppins, 14px, $colorDark);
-                        }
-                    }
                 }
             }
         }

@@ -5,21 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <section class="test">
-    <div class="testContainer">
-        <div class="box">
-          <h2>KREATYWNOSC</h2>
-          <p class="letterDescription first">Staram się aby każdy mój projekt wyróżniał się czymś szczególnym.</p>
-        </div>
-        <span class="projectsArrowLabel">
-            <p>projekty</p>
-            <i class="fas fa-arrow-down"></i>
-        </span>
+  <nav class="projectNavigation">
+    <div class="hamburgerContainer">
+      <div class="hamburgerBox">
+        <button class="hamburger">
+            <span class="hamburgerInner"></span>
+        </button>
+      </div>
     </div>
-</section>
+    <ul class="projectNavigationList">
+      <li><a href="index.html" class="firstLink">strona główna</a></li>
+      <li><a href="#aboutMe">portfolio</a></li>
+      <li><a href="#projects">example</a></li>
+    </ul>
+  </nav>
+
+  <section class="projectSection">
+    <div class="projectContainer">
+      <div class="outer-wrapper">
+        <div class="wrapper">
+          <div class="slide one">
+            <h1><span>e</span>-wolontariusz</h1>
+            <!-- <p>Aplikacja łącząca seniorów i osoby schorowane z wolontariuszami, stworzona na potrzeby pracy inżynierskiej.</p> -->
+            <p class="projectDescriptionText">Celem było zaprojektowanie oraz stworzenie strony internetowej w tematyce wolontariatu, zrzeszającej osoby starsze i schorowane oraz osoby chętne do niesienia darmowej pomocy. Projekt według założeń początkowych miał się wyróżniać przejrzystością i łatwością obsługi. Przez wzgląd na osoby starsze i schorowane jego wygląd musiał być stonowany i możliwie jak najprostszy. Tym samym, strona internetowa została pozbawiona zaawansowych elementów. Praca z nią jest dość prosta przez zastosowanie różnych elementów ułatwiających, tj. formularzy wieloetapowych, które posiadają również sekcje podpowiadające użytkownikowi, co powinno znaleźć się w danych polach tekstowych.</p>
+            <span class="time">Czas realizacji</span>
+            <p class="time">lipiec 2021 - grudzień 2021</p>
+          </div>
+          <div class="slide two">
+            <img src="src/projects/e-volunteer/mockupsImages/wolontariuszDemo.png" alt="wolontariuszDemo">
+            <div class="column">
+              <h1>~ Urodziliśmy się aby nieść pomoc</h1>
+              <p>Strona internetowa E-Wolontariusz jest w pełni funkcjonalna. Nie jest to jedynie projekt warstwy wizualnej. Stoi za nią rownież całe zaplecze obsługujące różne działania. Każdy z użytkowników ma możliwość darmowej rejestracji, która uwzględnia wybór odpowiedniej roli w systemie. Obecnie dostępne są dwie: <span>wolontariusz</span> oraz <span>senior</span>. Rola użytkownika jest ważna z punktu widzenia korzystania z serwisu. Stworzone zostały osobne widoki strony internetowej zarówno dla wolontariusza jak i dla seniora, które obejmują swoim zakresem różne funkcjonalności. Wolontariusz ma możliwość m.in. wyświetlania listy zgłoszeń i przyjmowania ich do realizowacji. Może również nimi zarządzać z poziomu specjalnie przygotowanej zakładki. Senior natomiast dostaje dostęp do tworzenia nowych zgłoszeń oraz do listy własnych, dodanych już, aktywnych ogłoszeń. </p>
+            </div>
+          </div>
+          <div class="slide three">
+            <img src="src/projects/e-volunteer/mockupsImages/mockupRegister.jpg" alt="">
+          </div>
+          <div class="slide four">
+            <div class="slideContainer">
+              <div class="textContainer">
+                <h1>Proces tworzenia projektu</h1>
+                <p>Moim zadaniem było zarówno zaprojektowanie jak i zakodowanie w pełni funkcjonalnej strony internetowej. W przypadku dużych projektów warto jest je odpowiednio zaplanować. Użyłem narzędzia <span>Miro</span>, w którym wykonałem tzw. mapę myśli i pomysłów. Podzieliłem ją na sekcje, w których umieszczałem karteczki z hasłami dotyczącymi rzeczy niezbędnych do wykonania. Pozwoliło mi to na zoptymalizowanie procesu budowy aplikacji i jej późniejszego testowania. Strona internetowa zaprojektowana została z wykorzystaniem dwóch popularnych programów graficznych. Pierwszym z nich jest <span>Figma</span>, która posłużyła mi do stworzenia oryginalnego logotypu strony i edycji grafik wektorowych. Kolejnym programem jest <span>Adobe XD</span>, w którym zaprojektowałem wygląd pojedynczych elemenetów szablonu strony.</p>  
+              </div>
+              <div class="colContainer">
+                <div class="col">
+                    <h2>wymagania minimalne</h2>
+                    <ul>
+                        <li>Przejrzystość i łatwość w obsłudze</li>
+                        <li>Możliwość rejestracji w systemie</li>
+                        <li>Podział rejestracji ze względu na rolę</li>
+                        <li>Możliwość dodawania zgłoszeń przez seniora</li>
+                        <li>Możliwość wyświetlania zgłoszeń przez wolontariusza</li>
+                        <li>Możliwość akceptowania i odrzucania zgłoszeń przez wolontariusza</li>
+                        <li>Możliwość wyświetlania profilu i jego edycji</li>
+                        <li>Możliwość edycji swoich zgłoszeń</li>
+                        <li>Dostarczenie opcji zmiany hasła do konta</li>
+                        <li>System powiadomień</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>poczynione kroki</h2>
+                    <ul>
+                        <li>Stworzenie konceptu strony</li>
+                        <li>Stworzenie szablonu strony</li>
+                        <li>Przygotowanie bazy danych</li>
+                        <li>Inicjalizacja projektu i repozytorium</li>
+                        <li>Stworzenie struktury strony</li>
+                        <li>Ostylowanie strony z wykorzystaniem preprocesora SASS</li>
+                        <li>Obsługa zdarzeń na stronie przy użyciu języka Javascript</li>
+                        <li>Stworzenie skryptów do obsługi zapytań do bazy danych</li>
+                        <li>Przeprowadzenie testów manualnych</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>oprogramowanie i narzędzia</h2>
+                    <ul>
+                        <li>Adobe XD</li>
+                        <li>Figma</li>
+                        <li>Visual Studio Code</li>
+                        <li>GitHub</li>
+                        <li>Miro</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide five">
+            <img src="src/projects/e-volunteer/rawImages/wolontariuszLayout.png" alt="">
+            <div class="slideContainer">
+              <h1>funkcjonalności strony</h1>
+              <p>Po poprawnej rejestracji w systemie i zalogowaniu się do swojego konta, użytkownik dostaje dostęp do kilku podstawowych funkcjonalności. Strona E-Wolontariusz na obecną chwilę oferuje możliwość tworzenia nowego ogłoszenia w oparciu o pięć wbudowanych kategorii zgłoszeń i specjalnie przygotowany kilkuetapowy formularz. Formularz jest dynamiczny, oznacza to, że jego zawartość zmienia się w zależności od kategorii, którą wybierze użytkownik serwisu. Dobrym przykładem jest kategoria Zakupy, w której senior może dodatkowo dodać listę zakupów oraz określić czy jest zainteresowany dostawą bezkontaktową. Analogicznie, w przypadku kategorii Zwierzęta użytkownik proszony jest o wypełnienie dodatkowych informacji o zwierzaku, tj. gatunek czy aktywności wymagane od wolontariusza (działania do wykonania, np. spacer, nakarmienie itp.). Taki formularz pozwala na ułatwienie decyzji wolontariuszowi na etapie przyjmowania zgłoszeń. Dzięki temu jest w stanie wybrać np. jedynie te zgłoszenia, które dotyczą określonych aktywności, które go interesują. Wolontariusz w momencie przyjęcia zgłoszenia automatycznie uruchamia skrypt wysyłający powiadomienia do seniorów. Dzięki temu, senior dostaje informację o tym, że status jego zgłoszenia został zmieniony. Statusy są ważnym elementem strony. Aktualnie dostępne są trzy statusy. Każdy z nich określony jest odpowiednim kolorem. Ułatwia to użytkownikom zarządzanie swoimi zgłoszeniami: </p>
+                <ul>
+                    <li><span class="redStatus"></span> Oczekuje na przyjęcie</li>
+                    <li><span class="greenStatus"></span> Przyjęto</li>
+                    <li><span class="orangeStatus"></span> Zrealizowane</li>
+                </ul>
+            </div>
+          </div>
+          <div class="slide six">
+            <div class="slider">
+              <div class="sliderContainer">
+                <div class="imageSection">
+                  <img src="src/projects/e-volunteer/rawImages/newReport1.jpg" alt="sliderImage" class="sliderImage">
+                </div>
+                <div class="indicators">
+                  <span class="prevBtn"><i class="far fa-arrow-alt-circle-left"></i></span>
+                  <span class="nextBtn"><i class="far fa-arrow-alt-circle-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide seven">
+            <div class="text1">
+              <h1>edycja zgłoszeń</h1>
+              <p>Senior w dowolnej chwili może edytować swoje zgłoszenie. Odbywa się to poprzez uruchomienie odpowiedniego formularza. Dane wewnątrz pól tekstowych zawartych w formularzu są w sposób automatyczny uzupełniane danymi aktualnymi, pochodzącymi z bazy danych. Sprawia to, że użytkownik nie jest zmuszony od początku wypełniać wszystkich danych a jedynie edytować te, które jego zdaniem zostały uzupełnione w sposób błędny. Ułatwia to w znacznym stopniu proces korzystania z serwisu. Dodatkowo, jeżeli użytkownik uzna, że zgłoszenie, które dodał do systemu jest niepotrzebne, ma możliwość jego całkowitego usunięcia z listy zgłoszeń. W tej sytuacji, ogłoszenie to jest archiwizowane. Dostarczona została również możliwość zmiany hasła. W celu zapewnienia bezpieczeństwa, wymaga ona podania aktualnego hasła. Ponadto, użytkownik ma możliwość zmiany podstawowych danych osobowych, np. miejscowości podanej na etapie rejestracji.</p>  
+            </div>
+            <div class="text2">
+              <h1>responsywność</h1>
+              <p>Strona internetowa jest w pełni responsywna. Oznacza to, że poprawnie wyświetla się zarówno na komputerach osobistych jak i na urządzeniach mobilnych. Korzystanie z niej na ekranie smartfona lub tabletu nie stanowi żadnego problemu. Dostosowane zostały widoki wszystkich podstron, wliczając w to również liczne formularze. Cały proces oparty jest o wykorzystanie tzw. reguł @media, dzięki którym możliwe jest dostosowanie reguł styli CSS do aktualnej rozdzielczości ekranu.</p>  
+            </div>
+          </div>
+          <div class="slide eight">
+            <img class="mobile" src="src/projects/e-volunteer/mockupsImages/mockupResponsive.png" alt="mockupImage">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/hamburgerProjectMenu.js"></script>
+  <script src="js/sliderVolunteer.js"></script>
 </body>
 </html>

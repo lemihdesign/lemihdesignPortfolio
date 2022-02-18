@@ -2,9 +2,9 @@ section.main-section {
     width: 100%;
     height: 100%;
     cursor: crosshair;
-    background-color: #ffffff;
+    background-color: #000;
     // overflow-x: hidden;
-    margin-top: 250px;
+    padding-top: 150px;
 
     .mainSectionContainer {
         position: relative;
@@ -13,11 +13,11 @@ section.main-section {
         display: flex;
         flex-direction: column;
         align-content: space-around;
-        margin: 100px auto 0 auto;
+        margin: 0 auto 0 auto;
 
         h2 {
             @include fontDeclaration($fontPoppins, 18px, $colorDark);
-            margin-top: 150px;
+            // margin-top: 150px;
             text-transform: uppercase;
         }
 
@@ -37,7 +37,7 @@ section.main-section {
             h3 {
                 font-family: $fontGilroyHeavy;
                 font-size: 96px;
-                color: $colorDark;
+                color: #fff;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -242,7 +242,7 @@ section.main-section {
                 width: 10px;
                 word-wrap: break-word;
                 text-align: center;
-                @include fontDeclaration($fontGilroyHeavy, 13px, $colorDark);
+                @include fontDeclaration($fontGilroyHeavy, 13px, #fff);
                 text-transform: uppercase;
             }
 

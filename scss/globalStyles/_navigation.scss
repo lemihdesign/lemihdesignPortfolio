@@ -1,4 +1,4 @@
-nav {
+nav.mainNavigation {
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -6,13 +6,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #fff;
+    background-color: #000;
 
     ul {
         width: 25%;
         display: flex;
         justify-content: space-around;
-        @include fontDeclaration($fontPoppins, 15px, $colorDark);
+        @include fontDeclaration($fontPoppins, 15px, #fff);
         text-transform: uppercase;
 
         li {
@@ -20,7 +20,7 @@ nav {
 
             a {
                 text-decoration: none;
-                color: $colorDark;
+                color: #fff;
             }
         }
     }
