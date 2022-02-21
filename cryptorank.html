@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kacper Lemiszewski">
+    <meta name="description" content="Tworzenie stron internetowych. Jestem Frontend Developerem z Jeleniej Góry. Zajmuję się tworzeniem stron internetowych w oparciu o szablony PSD, Adobe XD.">
+    <meta name="keywords" content="web design jelenia góra, web design wrocław, responsive web design, responsywne strony, strony mobilne, web development, front-end developer, kodowanie stron internetowych, tworzenie stron internetowych jelenia góra, psd to html, adobe xd to html">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptorank | Kacper Lemiszewski</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="src/icon/icon.jpg" sizes="32x32">
+</head>
+<body>
+  <nav class="projectNavigation">
+    <div class="hamburgerContainer">
+      <div class="hamburgerBox">
+        <button class="hamburger">
+            <span class="hamburgerInner"></span>
+        </button>
+      </div>
+    </div>
+    <ul class="projectNavigationList">
+      <li><a href="../" class="firstLink">strona główna</a></li>
+      <li><a href="../wolontariusz.html">e-wolontariusz</a></li>
+      <li><a href="../daietto.html">daietto</a></li>
+      <li><a href="../portfolio.html">portfolio</a></li>
+    </ul>
+  </nav>
+
+  <section class="projectSection">
+    <div class="projectContainer">
+      <div class="wrapper">
+        <div class="slide one">
+          <h1><span>C</span>RYPTORANKING</h1>
+          <p class="projectDescriptionText">Cryptoranking jest to aplikacja internetowa, która umożliwia śledzenie aktualnych zmian na rynku kryptowalut. Pomysł stworzenia takowej strony internetowej zrodził się w mojej głowie z powodu chęci nauki i pogłębiania wiedzy z zakresu wykorzystania danych pochodzących z API. Na etapie planowania zdecydowałem się wykorzystać dość popularne API dostarczane przez CoinGecko. Zadania, które przed sobą postawiłem to stworzenie pełnej warstwy wizualnej obejmującej zarówno komputery osobiste jak i urządzenia mobilne, stworzenie i wdrożenie całej logiki systemu oraz przedstawienie danych w formie możliwie jak najlepszej dla użytkownika końcowego.</p>
+          <div class="buttons">
+            <span class="time">Czas realizacji</span>
+            <a href="https://github.com/lemihdesign/cryptorank" target="_blank"><span class="viewCode">Github</span></a>
+            <a href="cryptorank"><span class="visitSite">Live</span></a>
+          </div>
+          <p class="time">luty 2022</p>
+          
+        </div>
+        <div class="slide two">
+          <img src="src/projects/cryptorank/mockupImages/cryptoMockup3.png" alt="cryptoMockup">
+          <div class="column">
+            <h2>Podstawowe założenia projektu</h2>
+            <p>Użytkownik, wchodząc na stronę internetową Cryptoranking ma możliwość śledzenia zmian kursów cenowych kryptowalut, które odświeżane są cyklicznie co 30 sekund. Stworzone zostały specjalne skrypty, które obserwują działania na rynku oraz reagują na wszelkie zmiany, sygnalizując je odpowiednimi statusami. W momencie wzrostu kursu, kolor aktualnej liczby zmieniany jest na zielony. W przypadku braku zmian, kolor pozostaje czarny, natomiast w momencie spadku cen, kolor zmienia się na czerwony. W przypadku wzrostu lub spadku, użytkownik może zaobserować dodatkowo ikony strzałek w górę oraz w dół, które mają na celu jeszcze wyraźniej wskazać aktualną sytuację.<br><br>W aktualnym wydaniu, aplikacja umożliwia monitorowanie zarówno kursów jak i zmian procentowych na przestrzeni ostatnich 24 godzin, całkowitego wolumenu 24-godzinnego, oraz całkowitej kapitalizacji rynkowej. Stworzone zostały specjalne skrypty filtrujące dane znajdujące się w tabeli. Istnieje możliwość wyświetlania odpowiedniej, interesującej nas ilości wierszy. Stworzona została również wyszukiwarka, która automatycznie wskazuje interesującą nas kryptowalutę.</p>
+          </div>
+        </div>
+        <div class="slide three">
+          <img src="src/projects/cryptorank/mockupImages/desktopMockup.jpg" alt="desktopMockup">
+        </div>
+        <div class="slide four">
+          <div class="slideContainer">
+            <div class="textContainer">
+              <h2>Proces tworzenia projektu</h2>
+              <p>Projekt zrealizowany został przy użyciu podstawowych narzędzi, służących zarówno do projektowania warstwy wizualnej jak i do kodowania strony internetowej. W trakcie pracy użyłem programów <span>Figma</span> oraz <span>Visual Studio Code</span>. Do kontroli wersji oprogramowania, standardowo skorzystałem z <span>Github</span>.</p>
+            </div>
+            <div class="colContainer">
+              <div class="col">
+                  <h3>wymagania minimalne</h3>
+                  <ul>
+                      <li>Pozyskiwanie danych z zewnętrznego API</li>
+                      <li>Automatyczne odświeżanie aktualnych danych po 30 sekundach</li>
+                      <li>Umożliwienie wyszukiwania kryptowalut</li>
+                      <li>Umożliwienie zmiany waluty</li>
+                      <li>Nasłuchiwanie na zmiany na rynku - reakcja na wzrosty i zniżki cen</li>
+                      <li>Umożliwienie filtrowania ilości wyświetlanych kryptowalut</li>
+                      <li>Przejrzystość i łatwość w obsłudze</li>
+                      <li>Stworzenie warstwy wizualnej dla komputerów osobistych</li>
+                      <li>Stworzenie warstwy wizualnej dla urządzeń mobilnych</li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <h3>poczynione kroki</h3>
+                  <ul>
+                      <li>Stworzenie konceptu strony</li>
+                      <li>Stworzenie szablonu strony</li>
+                      <li>Inicjalizacja projektu i repozytorium</li>
+                      <li>Stworzenie struktury strony</li>
+                      <li>Ostylowanie strony z wykorzystaniem preprocesora SASS</li>
+                      <li>Wykorzystanie języka Javascript do oskryptowania funkcjonalności strony</li>
+                      <li>Obsługa zdarzeń na stronie przy użyciu języka Javascript</li>
+                      <li>Przeprowadzenie testów manualnych</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide seven">
+          <h2>responsywność</h2>
+          <p>Obecnie użytkownik końcowy chce mieć dostęp do swojego ulubionego oprogramowania na każdym urządzeniu, bez znaczenia czy mówimy tutaj o telefonach czy komputerach. Tym samym, bardzo ważne było odpowiednie zaprojektowanie strony pod urządzenia mobilne. Strona internetowa Cryptorank jest w pełni responsywna. Oznacza to, że możemy śledzić zmiany na rynku kryptowalut na urządzeniach mobilnych. Wszystkie funkcjonalności są identyczne względem tych przeznaczonych dla wersji na komputery osobiste. Jedyną różnicą jest sposób wyświetlania. Tabelę z danymi ostylowałem w taki sposób aby możliwe było jej przewijanie w poziomie.</p>
+        </div>
+
+        <div class="slide eight cryptoEight">
+          <img class="mobile" src="src/projects/cryptorank/mockupImages/mobile.png" alt="mockupImage">
+        </div>
+
+        <div class="slide nine">
+          <h2>możliwości rozwoju</h2>
+          <p>Strona internetowa o takiej tematyce może zawierać wiele innych, przydatnych dla użytkownika końcowego informacji. Wśród nich zdecydowanie mogą znaleźć się:</p>
+          <ul>
+            <li>Wykresy przedstawiające aktualną sytuację rynkową</li>
+            <li>Wykresy przedstawiające historię zmian</li>
+            <li>Kalkulator cen</li>
+            <li>Blog o tematyce kryptowalut, zawierający najświeższe informacje w formie postów.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/hamburgerProjectMenu.js"></script>
+  <script src="js/sliderVolunteer.js"></script>
+</body>
+</html>

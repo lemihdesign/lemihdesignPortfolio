@@ -2,128 +2,147 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Kacper Lemiszewski">
+    <meta name="description" content="[JELENIA GÓRA] Tworzenie stron internetowych. Nazywam się Kacper Lemiszewski i jestem Frontend Developerem. Zajmuję się tworzeniem stron internetowych w oparciu o szablony PSD, Adobe XD.">
+    <meta name="keywords" content="web design jelenia góra, web design wrocław, responsive web design, responsywne strony, strony mobilne, web development, front-end developer, kodowanie stron internetowych, tworzenie stron internetowych jelenia góra, psd to html, adobe xd to html">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Wolontariusz - Projekt 1 | Kacper Lemiszewski</title>
+    <title>E-Wolontariusz | Kacper Lemiszewski</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="src/icon/icon.jpg" sizes="32x32">
 </head>
 <body>
-<div class="webContainer">
-    <div class="backArrow">
-        <a href="index.html#projects"><i class="fas fa-arrow-left"></i></a>
+  <nav class="projectNavigation">
+    <div class="hamburgerContainer">
+      <div class="hamburgerBox">
+        <button class="hamburger">
+            <span class="hamburgerInner"></span>
+        </button>
+      </div>
     </div>
-    <div class="wrapper">
-        <section class="projectHeader">
-            <div class="projectTitle">
-                <div class="col">
-                    <h1>E-Wolontariusz</h1>
-                    <div class="technologies">
-                        <span>HTML</span>
-                        <span>SASS</span>
-                        <span>Javascript</span>
-                        <span>jQuery</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-                <div class="col">
-                    <p class="margin">Czas realizacji</p>
-                    <p>lipiec 2021 - grudzień 2021</p>
-                </div>
-                <!-- <div class="col">
-                    <button class="notAllowedBtn">Kod źródłowy</button>
-                </div> -->
+    <ul class="projectNavigationList">
+      <li><a href="../" class="firstLink">strona główna</a></li>
+      <li><a href="../cryptorank.html">cryptorank</a></li>
+      <li><a href="../daietto.html">daietto</a></li>
+      <li><a href="../portfolio.html">portfolio</a></li>
+    </ul>
+  </nav>
+
+  <section class="projectSection">
+    <div class="projectContainer">
+      <div class="wrapper">
+        <div class="slide one">
+          <h1><span>e</span>-wolontariusz</h1>
+          <p class="projectDescriptionText">Celem było zaprojektowanie oraz stworzenie strony internetowej w tematyce wolontariatu, zrzeszającej osoby starsze i schorowane oraz osoby chętne do niesienia darmowej pomocy. Projekt według założeń początkowych miał się wyróżniać przejrzystością i łatwością obsługi. Przez wzgląd na osoby starsze i schorowane jego wygląd musiał być stonowany i możliwie jak najprostszy. Tym samym, strona internetowa została pozbawiona zaawansowych elementów. Praca z nią jest dość prosta przez zastosowanie różnych elementów ułatwiających, tj. formularzy wieloetapowych, które posiadają również sekcje podpowiadające użytkownikowi, co powinno znaleźć się w danych polach tekstowych.</p>
+          <div class="buttons">
+            <span class="time">Czas realizacji</span>
+          </div>
+          <p class="time">lipiec 2021 - grudzień 2021</p>
+        </div>
+        <div class="slide two">
+          <img src="src/projects/e-volunteer/mockupsImages/wolontariuszDemo2.png" alt="wolontariuszDemo">
+          <h2>Urodziliśmy się aby nieść pomoc</h2>
+          <p>Strona internetowa E-Wolontariusz jest w pełni funkcjonalna. Nie jest to jedynie projekt warstwy wizualnej. Stoi za nią rownież całe zaplecze obsługujące różne działania. Każdy z użytkowników ma możliwość darmowej rejestracji, która uwzględnia wybór odpowiedniej roli w systemie. Obecnie dostępne są dwie: <span>wolontariusz</span> oraz <span>senior</span>. Rola użytkownika jest ważna z punktu widzenia korzystania z serwisu. Stworzone zostały osobne widoki strony internetowej zarówno dla wolontariusza jak i dla seniora, które obejmują swoim zakresem różne funkcjonalności. Wolontariusz ma możliwość m.in. wyświetlania listy zgłoszeń i przyjmowania ich do realizowacji. Może również nimi zarządzać z poziomu specjalnie przygotowanej zakładki. Senior natomiast dostaje dostęp do tworzenia nowych zgłoszeń oraz do listy własnych, dodanych już, aktywnych ogłoszeń. </p>
+        </div>
+        <div class="slide three">
+          <img src="src/projects/e-volunteer/mockupsImages/mockupRegister2.jpg" alt="registerMockup">
+        </div>
+        <div class="slide four">
+          <div class="slideContainer">
+            <div class="textContainer">
+              <h2>Proces tworzenia projektu</h2>
+              <p>Moim zadaniem było zarówno zaprojektowanie jak i zakodowanie w pełni funkcjonalnej strony internetowej. W przypadku dużych projektów warto jest je odpowiednio zaplanować. Użyłem narzędzia <span>Miro</span>, w którym wykonałem tzw. mapę myśli i pomysłów. Podzieliłem ją na sekcje, w których umieszczałem karteczki z hasłami dotyczącymi rzeczy niezbędnych do wykonania. Pozwoliło mi to na zoptymalizowanie procesu budowy aplikacji i jej późniejszego testowania. Strona internetowa zaprojektowana została z wykorzystaniem dwóch popularnych programów graficznych. Pierwszym z nich jest <span>Figma</span>, która posłużyła mi do stworzenia oryginalnego logotypu strony i edycji grafik wektorowych. Kolejnym programem jest <span>Adobe XD</span>, w którym zaprojektowałem wygląd pojedynczych elemenetów szablonu strony. Po zaplanowaniu warstwy wizualnej przystąpiłem do kodowania strony. Do tego celu użyłem oprogramowania <span>Visual Studio Code</span>. Dodatkowo, do kontroli wersji oprogramowania użyłem <span>Github</span>.</p>  
             </div>
-            <p class="projectDescriptionText">Celem było zaprojektowanie oraz stworzenie strony internetowej w tematyce wolontariatu, zrzeszającej osoby starsze i schorowane oraz osoby chętne do niesienia darmowej pomocy. Projekt według założeń początkowych miał się wyróżniać przejrzystością i łatwością obsługi. Przez wzgląd na osoby starsze i schorowane jego wygląd musiał być stonowany i możliwie jak najprostszy. Tym samym, strona internetowa została pozbawiona zaawansowych elementów. Praca z nią jest dość prosta przez zastosowanie różnych elementów ułatwiających, tj. formularzy wieloetapowych, które posiadają również sekcje podpowiadające użytkownikowi, co powinno znaleźć się w danych polach tekstowych.</p>
-            <div class="imageSection">
-                <img src="src/projects/e-volunteer/rawImages/volunteerDesktop2.jpg" alt="volunteerImage" class="mainImage">
-            </div> 
-        </section>
-        <section class="projectDescription">
-            <div class="content">
-                <h2>proces tworzenia projektu</h2>
-                <p class="col-12">Moim zadaniem było zarówno zaprojektowanie jak i zakodowanie w pełni funkcjonalnej strony internetowej. W przypadku dużych projektów warto jest je odpowiednio zaplanować. Użyłem narzędzia Miro, w którym wykonałem tzw. mapę myśli i pomysłów. Podzieliłem ją na sekcje, w których umieszczałem karteczki z hasłami dotyczącymi rzeczy niezbędnych do wykonania. Pozwoliło mi to na zoptymalizowanie procesu budowy aplikacji i jej późniejszego testowania. Strona internetowa zaprojektowana została z wykorzystaniem dwóch popularnych programów graficznych. Pierwszym z nich jest Figma, która posłużyła mi do stworzenia oryginalnego logotypu strony i edycji grafik wektorowych. Kolejnym programem jest Adobe XD, w którym zaprojektowałem wygląd pojedynczych elemenetów szablonu strony.</p>
-                <div class="colContainer">
-                    <div class="col">
-                        <h2>wymagania minimalne</h2>
-                        <ul>
-                            <li>Przejrzystość i łatwość w obsłudze</li>
-                            <li>Możliwość rejestracji w systemie</li>
-                            <li>Podział rejestracji ze względu na rolę</li>
-                            <li>Możliwość dodawania zgłoszeń przez seniora</li>
-                            <li>Możliwość wyświetlania zgłoszeń przez wolontariusza</li>
-                            <li>Możliwość akceptowania i odrzucania zgłoszeń przez wolontariusza</li>
-                            <li>Możliwość wyświetlania profilu i jego edycji</li>
-                            <li>Możliwość edycji swoich zgłoszeń</li>
-                            <li>Dostarczenie opcji zmiany hasła do konta</li>
-                            <li>System powiadomień</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h2>poczynione kroki</h2>
-                        <ul>
-                            <li>Stworzenie konceptu strony</li>
-                            <li>Stworzenie szablonu strony</li>
-                            <li>Przygotowanie bazy danych</li>
-                            <li>Inicjalizacja projektu i repozytorium</li>
-                            <li>Stworzenie struktury strony</li>
-                            <li>Ostylowanie strony z wykorzystaniem preprocesora SASS</li>
-                            <li>Obsługa zdarzeń na stronie przy użyciu języka Javascript</li>
-                            <li>Stworzenie skryptów do obsługi zapytań do bazy danych</li>
-                            <li>Przeprowadzenie testów manualnych</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h2>oprogramowanie i narzędzia</h2>
-                        <ul>
-                            <li>Adobe XD</li>
-                            <li>Figma</li>
-                            <li>Visual Studio Code</li>
-                            <li>GitHub</li>
-                            <li>Miro</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="colContainer">
+              <div class="col">
+                  <h3>wymagania minimalne</h3>
+                  <ul>
+                      <li>Możliwość rejestracji w systemie</li>
+                      <li>Podział rejestracji ze względu na rolę</li>
+                      <li>Możliwość dodawania zgłoszeń przez seniora</li>
+                      <li>Możliwość wyświetlania zgłoszeń przez wolontariusza</li>
+                      <li>Możliwość akceptowania i odrzucania zgłoszeń przez wolontariusza</li>
+                      <li>Możliwość wyświetlania profilu i jego edycji</li>
+                      <li>Możliwość edycji swoich zgłoszeń</li>
+                      <li>Dostarczenie opcji zmiany hasła do konta</li>
+                      <li>System powiadomień</li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <h3>poczynione kroki</h3>
+                  <ul>
+                      <li>Stworzenie konceptu strony</li>
+                      <li>Stworzenie szablonu strony</li>
+                      <li>Przygotowanie bazy danych</li>
+                      <li>Stworzenie struktury strony</li>
+                      <li>Ostylowanie strony z wykorzystaniem preprocesora SASS</li>
+                      <li>Obsługa zdarzeń na stronie przy użyciu języka Javascript</li>
+                      <li>Stworzenie skryptów do obsługi zapytań do bazy danych</li>
+                      <li>Przeprowadzenie testów manualnych</li>
+                  </ul>
+              </div>
             </div>
-            <div class="content second">
-                <h2 class="mobileOnly">rejestracja</h2>
-                <div class="left first"></div>
-                <div class="right first">
-                    <h2 class="hide">rejestracja</h2>
-                    <p>Każdy użytkownik ma możliwość darmowej rejestracji. Odbywa się to poprzez wypełnienie formularza. Podzielony został on na trzy etapy. Każdy z nich, dla zwiększenia prostoty użytkowania, jest opisany w sposób szczegółowy. Dzięki temu, użytkownik, który zakłada nowe konto wie jakie dane powinien wprowadzić w polach tekstowych. Formularz jest w pełni walidowany, oznacza to, że podczas jego wypełniania sprawdzana jest zawartość każdego z pól pod kątem długości wprowadzanych ciągów znaków czy typu danych. Zwracane są odpowiednie komunikaty w momencie popełnienia przez użytkownika błędu. W serwisie dostępne są dwie role: wolontariusz oraz senior. Rola jest ważnym elementem z punktu widzenia dalszego korzystania z serwisu. Podczas każdego logowania jest ona sprawdzana i na tej podstawie dostosowywany jest widok dla użytkownika. Przygotowane zostały dwa osobne widoki, dla wolontariusza oraz dla seniora. Każdy z tych widoków charakteryzuje się dostępem do innych funkcjonalności strony. Podczas rejestracji, uruchamiany jest specjalnie przygotowany skrypt odpowiedzialny za szyfrowanie hasła w celu zwiększenia bezpieczeństwa przechowywanych danych logowania.</p>
-                </div>
+          </div>
+        </div>
+        <div class="slide five">
+          <div class="slideContainer">
+            <h2>funkcjonalności strony</h2>
+            <p>Po poprawnej rejestracji w systemie i zalogowaniu się do swojego konta, użytkownik dostaje dostęp do kilku podstawowych funkcjonalności. Strona E-Wolontariusz na obecną chwilę oferuje możliwość tworzenia nowego ogłoszenia w oparciu o pięć wbudowanych kategorii zgłoszeń i specjalnie przygotowany kilkuetapowy formularz. Formularz jest dynamiczny, oznacza to, że jego zawartość zmienia się w zależności od kategorii, którą wybierze użytkownik serwisu. Dobrym przykładem jest kategoria Zakupy, w której senior może dodatkowo dodać listę zakupów oraz określić czy jest zainteresowany dostawą bezkontaktową. Analogicznie, w przypadku kategorii Zwierzęta użytkownik proszony jest o wypełnienie dodatkowych informacji o zwierzaku, tj. gatunek czy aktywności wymagane od wolontariusza (działania do wykonania, np. spacer, nakarmienie itp.). Taki formularz pozwala na ułatwienie decyzji wolontariuszowi na etapie przyjmowania zgłoszeń. Dzięki temu jest w stanie wybrać np. jedynie te zgłoszenia, które dotyczą określonych aktywności, które go interesują. Wolontariusz w momencie przyjęcia zgłoszenia automatycznie uruchamia skrypt wysyłający powiadomienia do seniorów. Dzięki temu, senior dostaje informację o tym, że status jego zgłoszenia został zmieniony. Statusy są ważnym elementem strony. Aktualnie dostępne są trzy statusy. Każdy z nich określony jest odpowiednim kolorem. Ułatwia to użytkownikom zarządzanie swoimi zgłoszeniami: </p>
+              <ul>
+                  <li><span class="redStatus"></span> Oczekuje na przyjęcie</li>
+                  <li><span class="greenStatus"></span> Przyjęto</li>
+                  <li><span class="orangeStatus"></span> Zrealizowane</li>
+              </ul>
+          </div>
+        </div>
+        <div class="slide six">
+          <div class="slider">
+            <div class="sliderContainer">
+              <div class="imageSection">
+                <img src="src/projects/e-volunteer/rawImages/newReport1.jpg" alt="sliderImage" class="sliderImage">
+              </div>
+              <div class="indicators">
+                <span class="arrow prevBtn"><i class="fa-solid fa-left-long"></i></span>
+                <span class="arrow nextBtn"><i class="fa-solid fa-right-long"></i></span>
+              </div>
             </div>
-        </section>
-        <section class="projectDescription">
-            <div class="content third">
-                <h2>funckjonalności strony</h2>
-                <p>Po poprawnej rejestracji w systemie i zalogowaniu się do swojego konta, użytkownik dostaje dostęp do kilku podstawowych funkcjonalności. Strona E-Wolontariusz na obecną chwilę oferuje możliwość tworzenia nowego ogłoszenia w oparciu o pięć wbudowanych kategorii zgłoszeń i specjalnie przygotowany kilkuetapowy formularz. Formularz jest dynamiczny, oznacza to, że jego zawartość zmienia się w zależności od kategorii, którą wybierze użytkownik serwisu. Dobrym przykładem jest kategoria Zakupy, w której senior może dodatkowo dodać listę zakupów oraz określić czy jest zainteresowany dostawą bezkontaktową. Analogicznie, w przypadku kategorii Zwierzęta użytkownik proszony jest o wypełnienie dodatkowych informacji o zwierzaku, tj. gatunek czy aktywności wymagane od wolontariusza (działania do wykonania, np. spacer, nakarmienie itp.). Taki formularz pozwala na ułatwienie decyzji wolontariuszowi na etapie przyjmowania zgłoszeń. Dzięki temu jest w stanie wybrać np. jedynie te zgłoszenia, które dotyczą określonych aktywności, które go interesują. Wolontariusz w momencie przyjęcia zgłoszenia automatycznie uruchamia skrypt wysyłający powiadomienia do seniorów. Dzięki temu, senior dostaje informację o tym, że status jego zgłoszenia został zmieniony. Statusy są ważnym elementem strony. Aktualnie dostępne są trzy statusy. Każdy z nich określony jest odpowiednim kolorem. Ułatwia to użytkownikom zarządzanie swoimi zgłoszeniami: </p>
-                <ul>
-                    <li><span class="redStatus"></span> Oczekuje na przyjęcie</li>
-                    <li><span class="greenStatus"></span> Przyjęto</li>
-                    <li><span class="orangeStatus"></span> Zrealizowane</li>
-                </ul>
-                <p>Senior w dowolnej chwili może edytować swoje zgłoszenie. Odbywa się to poprzez uruchomienie odpowiedniego formularza. Dane wewnątrz pól tekstowych zawartych w formularzu są w sposób automatyczny uzupełniane danymi aktualnymi, pochodzącymi z bazy danych. Sprawia to, że użytkownik nie jest zmuszony od początku wypełniać wszystkich danych a jedynie edytować te, które jego zdaniem zostały uzupełnione w sposób błędny. Ułatwia to w znacznym stopniu proces korzystania z serwisu. Dodatkowo, jeżeli użytkownik uzna, że zgłoszenie, które dodał do systemu jest niepotrzebne, ma możliwość jego całkowitego usunięcia z listy zgłoszeń. W tej sytuacji, ogłoszenie to jest archiwizowane. Dostarczona została również możliwość zmiany hasła. W celu zapewnienia bezpieczeństwa, wymaga ona podania aktualnego hasła. Ponadto, użytkownik ma możliwość zmiany podstawowych danych osobowych, np. miejscowości podanej na etapie rejestracji.</p>
-            </div>
-        </section>
-        <section class="projectDescription">
-            <div class="content fourth">
-                <h2>responsywność</h2>
-                <p>Strona internetowa jest w pełni responsywna. Oznacza to, że poprawnie wyświetla się zarówno na komputerach osobistych jak i na urządzeniach mobilnych. Korzystanie z niej na ekranie smartfona lub tabletu nie stanowi żadnego problemu. Dostosowane zostały widoki wszystkich podstron, wliczając w to również liczne formularze. Cały proces oparty jest o wykorzystanie tzw. reguł @media, dzięki którym możliwe jest dostosowanie reguł styli CSS do aktualnej rozdzielczości ekranu.</p>
-                <img class="mobile" src="src/projects/e-volunteer/mockupsImages/mockupResponsive.png" alt="mockupImage">
-            </div>
-        </section>
-        <footer>
-            <p>&copy; 2022 Kacper Lemiszewski</p>
-            <p>Free Mockups from <a href="www.freepik.com">www.freepik.com</a></p>
-        </footer>
+          </div>
+        </div>
+        <div class="slide seven">
+          <div class="text1">
+            <h2>edycja zgłoszeń</h2>
+            <p>Senior w dowolnej chwili może edytować swoje zgłoszenie. Odbywa się to poprzez uruchomienie odpowiedniego formularza. Dane wewnątrz pól tekstowych zawartych w formularzu są w sposób automatyczny uzupełniane danymi aktualnymi, pochodzącymi z bazy danych. Sprawia to, że użytkownik nie jest zmuszony od początku wypełniać wszystkich danych a jedynie edytować te, które jego zdaniem zostały uzupełnione w sposób błędny. Ułatwia to w znacznym stopniu proces korzystania z serwisu. Dodatkowo, jeżeli użytkownik uzna, że zgłoszenie, które dodał do systemu jest niepotrzebne, ma możliwość jego całkowitego usunięcia z listy zgłoszeń. W tej sytuacji, ogłoszenie to jest archiwizowane. Dostarczona została również możliwość zmiany hasła. W celu zapewnienia bezpieczeństwa, wymaga ona podania aktualnego hasła. Ponadto, użytkownik ma możliwość zmiany podstawowych danych osobowych, np. miejscowości podanej na etapie rejestracji.</p>  
+          </div>
+          <div class="text2">
+            <h2>responsywność</h2>
+            <p>Strona internetowa jest w pełni responsywna. Oznacza to, że poprawnie wyświetla się zarówno na komputerach osobistych jak i na urządzeniach mobilnych. Korzystanie z niej na ekranie smartfona lub tabletu nie stanowi żadnego problemu. Dostosowane zostały widoki wszystkich podstron, wliczając w to również liczne formularze. Cały proces oparty jest o wykorzystanie tzw. reguł @media, dzięki którym możliwe jest dostosowanie reguł styli CSS do aktualnej rozdzielczości ekranu.</p>  
+          </div>
+        </div>
+        <div class="slide eight">
+          <img class="mobile" src="src/projects/e-volunteer/mockupsImages/mockupResponsive.png" alt="mockupImage">
+        </div>
+        <div class="slide nine">
+          <h2>możliwości rozwoju</h2>
+          <p>Strona internetowa może być w łatwy sposób rozbudowywana i ulepszana tak aby była jeszcze prostsza w obsłudze i tym samym jeszcze bardziej przyjazna dla użytkownika końcowego. Istnieje wiele funkcjonalności, które są możliwe do wprowadzenia. Spośród nich można wymienić:</p>
+          <ul>
+            <li>Filtrowanie zgłoszeń</li>
+            <li>Obejmowanie seniorów opieką stałą </li>
+            <li>System wiadomości prywatnych pomiędzy użytkownikami</li>
+            <li>Ulepszenie systemu przyjmowania zgłoszeń i zmiany ich statusów. Dodanie możliwości umieszczania np. zdjęcia paragonu w celu potwierdzenia dokonania transakcji.</li>
+            <li>Wysyłanie wiadomości e-mail do użytkowników po rejestracji i przy zmianie hasła co wpłynęłoby na dodatkowe bezpieczeństwo</li>
+            <li>Wprowadzenie formularza kontaktowego z administracją serwisu</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
-<script src="js/volunteerScript.js"></script>
+  </section>
+
+  <script src="js/hamburgerProjectMenu.js"></script>
+  <script src="js/sliderVolunteer.js"></script>
 </body>
 </html>

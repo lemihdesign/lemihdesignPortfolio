@@ -176,3 +176,13 @@
         top: -100vh;
     }
 }
+
+@keyframes animateProjects {
+    from {
+        margin-left: -150%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}

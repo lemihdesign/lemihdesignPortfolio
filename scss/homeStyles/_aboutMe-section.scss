@@ -30,11 +30,6 @@
 
             h2 {
                 @include fontDeclaration($fontPoppins, 20px, #fff);
-
-                span {
-                    // color: $colorPink;
-                    // font-weight: 800;
-                }
             }
 
             p {

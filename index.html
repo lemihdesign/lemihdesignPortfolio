@@ -2,31 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Kacper Lemiszewski">
+    <meta name="description" content="Tworzenie stron internetowych. Jestem Frontend Developerem z Jeleniej Góry. Zajmuję się tworzeniem stron internetowych w oparciu o szablony PSD, Adobe XD.">
+    <meta name="keywords" content="web design jelenia góra, web design wrocław, responsive web design, responsywne strony, strony mobilne, web development, front-end developer, kodowanie stron internetowych, tworzenie stron internetowych jelenia góra, psd to html, adobe xd to html">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kacper Lemiszewski | Portfolio 2022</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="src/icon/icon.jpg" sizes="32x32">
 </head>
 <body>
-    <nav class="mainNavigation">
-        <div class="hamburgerContainer">
-            <div class="hamburgerBox">
-                <button class="hamburger">
-                    <span class="hamburgerInner"></span>
-                </button>
-            </div>
-        </div>
-        <ul>
-            <li><a href="#aboutMe">O mnie</a></li>
-            <li><a href="#projects">Projekty</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
     <header class="mainSiteHeader">     
         <h1 class="nameTitle">lemihdesign</h1>
         <p class="jobTitle"><span>FRONTEND DEVELOPER</span></p>
@@ -42,10 +32,8 @@
     <section class="projects" id="projects">
         <h1>projekty<span>_</span></h1>
         <div class="projectsContainer">
-            <!-- <h2 class="projectsLabel">wybrane projekty</h2>
-            <p>W swoim portfolio nie zamieściłem wielu projektów. Dodałem jedynie te, które są większe i dodatkowo są w miarę nowe. Projekt, z którego jestem najbardziej dumny to zdecydowanie ten związany z moją pracą inżynierską - E-Wolontariusz.</p> -->
-            <a href="test.html" class="projectRedirect">
-                <div class="box">
+            <a href="wolontariusz.html" class="projectRedirect">
+                <div class="box first">
                     <div class="title">
                         <h2><span>01</span> e-wolontariusz</h2>
                     </div>
@@ -60,74 +48,80 @@
                             <span>MySQL</span>
                             <span class="software">Adobe XD</span>
                             <span class="software">Figma</span>
-                            <span class="software">Visual Studio Code</span>
+                            <span class="software visual">Visual Studio Code</span>
                         </div>
                     </div>
                     <div class="image first"></div>
                     <div class="imageForMobile first"></div>
-                    <a href="test.html"><button class="btnForMobile">Szczegóły</button></a>
+                    <a href="wolontariusz.html"><button class="btnForMobile">Szczegóły</button></a>
                 </div>
             </a>
             
-            <div class="box">
-                <div class="title">
-                    <h2><span>02</span> cryptoranking</h2>
-                </div>
-                <div class="subtitle">
-                    <h2>strona internetowa do śledzenia rynku kryptowalut</h2>
-                    <div class="technologies">
-                        <span>HTML</span>
-                        <span>SASS</span>
-                        <span>Javascript</span>
-                        <span>jQuery</span>
-                        <span>API</span>
-                        <span class="software">Visual Studio Code</span>
+            <a href="cryptorank.html" class="projectRedirect">
+                <div class="box second">
+                    <div class="title">
+                        <h2><span>02</span> cryptoranking</h2>
                     </div>
+                    <div class="subtitle">
+                        <h2>strona internetowa do śledzenia rynku kryptowalut</h2>
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>SASS</span>
+                            <span>Javascript</span>
+                            <span>jQuery</span>
+                            <span>API</span>
+                            <span class="software visual">Visual Studio Code</span>
+                        </div>
+                    </div>
+                    <div class="image second"></div>
+                    <div class="imageForMobile second"></div>
+                    <a href="cryptorank.html"><button class="btnForMobile">Szczegóły</button></a>
                 </div>
-                <div class="image second"></div>
-                <div class="imageForMobile second"></div>
-                <a href="test.html"><button class="btnForMobile">Szczegóły</button></a>
-            </div>
+            </a>
 
-            <div class="box">
-                <div class="title">
-                    <h2><span>03</span> daietto</h2>
-                </div>
-                <div class="subtitle">
-                    <h2>klon szablonu strony daietto</h2>
-                    <div class="technologies">
-                        <span>HTML</span>
-                        <span>SASS</span>
-                        <span>Javascript</span>
-                        <span>jQuery</span>
-                        <span class="software">Visual Studio Code</span>
+            <a href="daietto.html" class="projectRedirect">
+                <div class="box third">
+                    <div class="title">
+                        <h2><span>03</span> daietto</h2>
                     </div>
+                    <div class="subtitle">
+                        <h2>klon szablonu strony daietto</h2>
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>SASS</span>
+                            <span>Javascript</span>
+                            <span>jQuery</span>
+                            <span class="software visual">Visual Studio Code</span>
+                        </div>
+                    </div>
+                    <div class="image third"></div>
+                    <div class="imageForMobile third"></div>
+                    <a href="daietto.html"><button class="btnForMobile">Szczegóły</button></a>
                 </div>
-                <div class="image third"></div>
-                <div class="imageForMobile third"></div>
-                <a href="test.html"><button class="btnForMobile">Szczegóły</button></a>
-            </div>
+            </a>
 
-            <div class="box">
-                <div class="title">
-                    <h2><span>04</span> portfolio</h2>
-                </div>
-                <div class="subtitle">
-                    <h2>projekt mojej strony internetowej</h2>
-                    <div class="technologies">
-                        <span>HTML</span>
-                        <span>SASS</span>
-                        <span>Javascript</span>
-                        <span>jQuery</span>
-                        <span class="software">Adobe XD</span>
-                        <span class="software">Figma</span>
-                        <span class="software">Visual Studio Code</span>
+            <a href="portfolio.html" class="projectRedirect">
+                <div class="box fourth">
+                    <div class="title">
+                        <h2><span>04</span> portfolio</h2>
                     </div>
+                    <div class="subtitle">
+                        <h2>projekt mojej strony internetowej</h2>
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>SASS</span>
+                            <span>Javascript</span>
+                            <span>jQuery</span>
+                            <span class="software">Adobe XD</span>
+                            <span class="software">Figma</span>
+                            <span class="software visual">Visual Studio Code</span>
+                        </div>
+                    </div>
+                    <div class="image fourth"></div>
+                    <div class="imageForMobile fourth"></div>
+                    <a href="portfolio.html"><button class="btnForMobile">Szczegóły</button></a>
                 </div>
-                <div class="image fourth"></div>
-                <div class="imageForMobile fourth"></div>
-                <a href="test.html"><button class="btnForMobile">Szczegóły</button></a>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -135,8 +129,8 @@
         <h1>o mnie<span>_</span></h1>
         <div class="aboutMe-container">
             <div class="top">
-                <h2>Nazywam się <span>KACPER LEMISZEWSKI</span> <span class="mobile">i jestem początkującym <span class="jobTitle">FRONTEND DEVELOPEREM</span><span class="pink"></span>.</span></h2>
-                <p>Ukończyłem studia inżynierskie na Politechnice Wrocławskiej i rozglądam się za pierwszą pracą w zawodzie. Jestem samoukiem, który dąży do zdobywania doświadczenia jako Frontend Developer. Na trzecim roku studiów wykonałem kilka większych projektów, które zapewniły mi zauważalny progres umiejętności i dały mi kopa do dalszej pracy. Jeden z nich był projektem grupowym, który pozwolił mi na zdobycie pierwszego doświadczenia w pracy z wykorzystaniem <span>metodologii SCRUM</span> i takich narzędzi jak <span>Mural</span>, <span>Jira</span> czy <span>GitHub</span>.</p>
+                <h2 class="introduction">Nazywam się Kacper Lemiszewski 🖐</span></h2>
+                <p>Ukończyłem studia inżynierskie na Politechnice Wrocławskiej i rozglądam się za pierwszą pracą w zawodzie Frontend Developera. Jestem samoukiem, który dąży do zdobywania pierwszych komercyjnych doświadczeń. Na trzecim roku studiów wykonałem kilka większych projektów, które zapewniły mi zauważalny progres umiejętności i dały mi kopa do dalszej pracy. Jeden z nich był projektem grupowym, który pozwolił mi na zdobycie pierwszego doświadczenia w pracy z wykorzystaniem <span>metodologii SCRUM</span> i takich narzędzi jak <span>Mural</span>, <span>Jira</span> czy <span>GitHub</span>.</p>
                 <div class="technologiesColumns">
                     <div class="col">
                         <h3>frontend</h3>
@@ -181,7 +175,6 @@
             <div class="bottom">
                 <div class="bottomContainer">
                     <h1>co mogę zaoferować<span>?</span></h1>
-                    <!-- <p>Tak jak wspomniałem na codzień rozwijam się w kierunku technologii związanych z Frontend'em. Aczkolwiek nie zamykam się tylko na to. Moje strony internetowe używają również rozwiązań backendowych. Na obecną chwilę mógłbym sporządzić następującą listę języków/bibliotek, z którymi miałem styczność i których używałem przy swoich projektach.</p> -->  
                 </div>
             </div>
         </div>
@@ -189,8 +182,6 @@
 
     <section class="main-section">
         <div class="mainSectionContainer">
-            <!-- <h2>to jest dla mnie najważniejsze</h2>
-            <p>Podczas swojej codziennej pracy kieruje się trzema podstawowymi zasadami. Chcę aby każdy z mój projektów wyróżniał się kreatywnością. Staram się aby każdy z nich zawierał coś unikalnego, czego wcześniej nie używałem na stronach internetowych. Pozwala mi to na jeszcze większy rozwój, który również jest dla mnie ważnym elementem.  </p> -->
             <div class="box first">
                 <h3 class="letter1">K</h3>
                 <h3 class="letter2">R</h3>
@@ -203,7 +194,6 @@
                 <h3 class="letter9">O</h3>
                 <h3 class="letter10">Ś</h3>
                 <h3 class="letter11">Ć</h3>
-                <!-- <p class="letterDescription first">Staram się aby każdy mój projekt wyróżniał się czymś szczególnym. </p> -->
             </div>
             <div class="box second">
                 <h3 class="letter1">A</h3>
@@ -213,7 +203,6 @@
                 <h3 class="letter5">C</h3>
                 <h3 class="letter6">J</h3>
                 <h3 class="letter7">E</h3>
-                <!-- <p class="letterDescription second">Chcę się ciągle rozwijać, a jak wiadomo najlepiej jest to robić poprzez realizację nowych interesujących projektów. Staram się tworzyć większe strony internetowe, które realizują jakieś działania i przy okazji mogą być pomocne dla społeczeństwa.</p> -->
             </div>
             <div class="box third">
                 <h3 class="letter1">R</h3>
@@ -222,7 +211,6 @@
                 <h3 class="letter4">W</h3>
                 <h3 class="letter5">Ó</h3>
                 <h3 class="letter6">J</h3>
-                <!-- <p class="letterDescription third">Podnoszenie swoich kwalifikacji jest dla mnie bardzo ważne. Codziennie dąże do rozwoju ucząć się i tworząc własne projekty. Chciałbym móc uczyć się od najlepszych dlatego zachęcam do przejrzenia moich projektów i do kontaktu.</p> -->
             </div>
             <span class="projectsArrowLabel">
                 <p>kontakt</p>
@@ -233,27 +221,52 @@
 
     <section class="contact-section" id="contact">
         <div class="contactSectionContainer">
-            <h1><span>/</span> Skontaktuj się ze mną</h1>
-            <div class="icons">
-                <i class="fa-brands fa-github-square"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <form action="#">
-                <div class="formContent">
-                    <div class="top">
-                        <p>Cześć, nazywam się </p> <input type="text" placeholder="Twoje imie i nazwisko"><p><p class="dot">.</p> <p>&nbsp;Piszę do Ciebie w sprawie </p> 
-                        <select name="msgType" id="msgType">
-                            <option value="oferty pracy">oferty pracy</option>
-                            <option value="zlecenia">zlecenia</option>    
-                        </select>
-                        <p class="dot">.</p>
+            <aside class="left">
+                <h2><span>/</span> Skontaktuj się ze mną</h2>
+                <p class="contactLabel">Masz jakiekolwiek pytania? Zapraszam do kontaktu poprzez adres e-mail lub moje profile. Dodatkowo, możesz również skorzystać ze specjalnie przygotowanego formularza kontaktowego. Do usłyszenia! :)</p>
+                <span class="contactHref">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p> hello@lemiszewski.pl</p>
+                </span>
+                <a href="https://github.com/lemihdesign" target="_blank">
+                    <span class="contactHref">
+                        <i class="fa-brands fa-github-square"></i>
+                        <p> Github</p>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="contactHref">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <p> Linkedin</p>
+                    </span>
+                </a>
+            </aside>
+
+            <aside class="right">
+                <form action="" method="post">
+                    <div class="formContent">
+                        <p>Piszę aby...</p>
+                        <div class="radioContainer">
+                            <div>
+                                <input type="radio" name="reportType" id="zlecenie" value="Zlecenie" checked> 
+                                <label for="zlecenie">Zlecić pracę</label>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" name="reportType" id="ofertaPracy" value="Oferta pracy">
+                                <label for="ofertaPracy">Zaoferować pracę</label>
+                            </div>
+                        </div>
+                        <div class="inputContainer">
+                            <input type="text" name="clientName" id="clientName" placeholder="Twoje imie">
+                            <input type="email" name="email" id="email" placeholder="Twój adres e-mail">
+                            <textarea name="msg" id="msg" placeholder="Opowiedz o tym więcej"></textarea>
+                            <button type="submit">Wyślij zapytanie</button>
+                            <p class="sendStatus"><i class="fa-solid fa-circle-check"></i><i class="fa-solid fa-circle-xmark"></i>Wysyłanie wiadomości...</p>
+                        </div>
                     </div>
-                    <div class="bottom">
-                        <p>Proszę o wiadomość zwrotną na adres e-mail: </p> <input type="email" placeholder="Twój adres e-mail"><p class="dot">.</p>
-                    </div>
-                    <button type="submit">Wyślij wiadomość</button>
-                </div>
-            </form>
+                </form>
+            </aside>
         </div>
     </section>
 
@@ -263,7 +276,8 @@
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/mainSite.js"></script>
-    <script src="js/hamburgerMenu.js"></script>
+    <script src="js/formValidation.js"></script>
+    <!-- <script src="js/hamburgerMenu.js"></script> -->
 
 </body>
 </html>

@@ -38,6 +38,7 @@ section.projects {
         }
 
         .box {
+            margin-left: -150%;
             width: 100%;
             height: 125px;
             border-bottom: 1px solid $colorLightDark;
@@ -95,22 +96,22 @@ section.projects {
 
             .image.first {
                 top: 50px;
-                background-image: url('../src/projects/e-volunteer/mockupsImages/wolontariuszDemo.png');
+                background-image: url('../src/projects/e-volunteer/mockupsImages/wolontariuszDemo2.png');
             }
 
             .image.second {
                 top: 150px;
-                background-image: url('../src/projects/cryptorank/mockupImages/cryptoMockup2.png');
+                background-image: url('../src/projects/cryptorank/mockupImages/cryptoMockup3.png');
             }
 
             .image.third {
                 top: 250px;
-                background-image: url('../src/projects/daietto/mockupImages/daiettoMockup.png');
+                background-image: url('../src/projects/daietto/mockupImages/daiettoMockup2.png');
             }
 
             .image.fourth {
                 top: 350px;
-                background-image: url('../src/projects/portfolio/mockupImages/portfolioMockup.png');
+                background-image: url('../src/projects/portfolio/mockupImages/portfolioMockup2.png');
             }
 
             .imageForMobile {
@@ -132,6 +133,22 @@ section.projects {
             .image {
                 opacity: 1;
             }
+        }
+
+        .box.first.show {
+            animation: animateProjects 1s 0s linear both;
+        }
+
+        .box.second.show {
+            animation: animateProjects 1s .2s linear both;
+        }
+
+        .box.third.show {
+            animation: animateProjects 1s .4s linear both;
+        }
+
+        .box.fourth.show {
+            animation: animateProjects 1s .6s linear both;
         }
     }
 }

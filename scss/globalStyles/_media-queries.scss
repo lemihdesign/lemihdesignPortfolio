@@ -16,97 +16,30 @@
     }
 }
 
+@media(min-width: 1025px) and (max-width: 1370px) {
+    section.projects {
+        .projectsContainer {
+            .box {
+                height: 90px;
+
+                .title {
+                    h2 {
+                        font-size: 56px;
+                    }
+                }
+
+                .subtitle {
+                    h2 {
+                        font-size: 22px;
+                        padding-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(max-width: 1024px) {
-
-    /* Navigation */
-    nav.mainNavigation {
-        width: 100%;
-        height: 70px;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        background-color: #000;
-        overflow: hidden;
-
-        ul {
-            width: 100%;
-            padding: 25px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-
-            li {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                margin-top: 10px;
-                line-height: 50px;
-
-                a {
-                    color: #fff;
-                }
-            }
-        }
-
-        .hamburgerContainer {
-            width: 95%;
-            height: 50px;
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 10px;
-            margin-right: 10px;
-
-            .hamburgerBox {
-                width: 30px;
-                height: 50px;
-
-                .hamburger {
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-                    border: none;
-                    background-color: transparent;
-
-                    .hamburgerInner {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        width: 100%;
-                        height: 3px;
-                        display: block;
-                        background-color: #fff;
-                    }
-
-                    .hamburgerInner::after {
-                        position: absolute;
-                        top: 10px;
-                        left: 0;
-                        content: '';
-                        width: 110%;
-                        height: 3px;
-                        display: block;
-                        background-color: #fff;
-                    }
-
-                    .hamburgerInner::before {
-                        position: absolute;
-                        top: -10px;
-                        left: 0;
-                        content: '';
-                        width: 90%;
-                        height: 3px;
-                        display: block;
-                        background-color: #fff;
-                    }
-                }
-            }
-        }
-    }
-
-    nav.navigation--active {
-        height: 100vh;
-    }
 
     /* Project navigation */
     nav.projectNavigation {
@@ -129,15 +62,15 @@
                     z-index: 3;
 
                     .hamburgerInner {
-                        background-color: $colorDark;
+                        background-color: #fff;
                     }
 
                     .hamburgerInner::after {
-                        background-color: $colorDark;
+                        background-color: #fff;
                     }
 
                     .hamburgerInner::before {
-                        background-color: $colorDark;
+                        background-color: #fff;
                     }
                 }
             }
@@ -218,7 +151,7 @@
         .aboutMe-container {
             .top {
                 h2 {
-                    font-size: 19px;
+                    font-size: 17px;
                     width: 100%;
                     line-height: 40px;
                     text-transform: uppercase;
@@ -519,6 +452,10 @@
                         text-transform: none;
                         font-size: 14px;
                         margin-top: 0;
+
+                        @media(max-width: 1370px) {
+                            font-size: 12px;
+                        }
                     }
 
                     .technologies {
@@ -535,6 +472,10 @@
                             text-align: center;
                             margin-top: 10px;
                         }
+
+                        span.visual {
+                            width: 140px;
+                        }
                     }
                 }
 
@@ -549,23 +490,23 @@
                     background-size: 100%;
                     background-position: center;
                     background-repeat: no-repeat;
-                    margin: 25px auto;
+                    margin: 0px auto;
                 }
 
                 .imageForMobile.first {
-                    background-image: url('../src/projects/e-volunteer/mockupsImages/wolontariuszDemo.png');
+                    background-image: url('../src/projects/e-volunteer/mockupsImages/wolontariuszDemo2.png');
                 }
 
                 .imageForMobile.second {
-                    background-image: url('../src/projects/cryptorank/mockupImages/cryptoMockup.png');
+                    background-image: url('../src/projects/cryptorank/mockupImages/cryptoMockup3.png');
                 }
 
                 .imageForMobile.third {
-                    background-image: url('../src/projects/daietto/mockupImages/daiettoMockup.png');
+                    background-image: url('../src/projects/daietto/mockupImages/daiettoMockup2.png');
                 }
 
                 .imageForMobile.fourth {
-                    background-image: url('../src/projects/portfolio/mockupImages/portfolioMockup.png');
+                    background-image: url('../src/projects/portfolio/mockupImages/portfolioMockup2.png');
                 }
             }
 
@@ -592,7 +533,6 @@
     section.contact-section {
         width: 100%;
         height: 100%;
-        // margin-top: 50px;
 
         .contactSectionContainer {
             flex-direction: column;
@@ -600,60 +540,42 @@
             height: 100%;
             margin: 0 auto 0 auto;
 
-            form {
-                .formContent {
-                    margin-top: 50px;
+            aside.left {
+                width: 100%;
 
-                    .top {
-                        flex-direction: column;
+                p.contactLabel {
+                    width: 100%;
+                }
+            }
 
-                        input {
-                            margin-top: 25px;
-                            width: 95%;
-                            line-height: 30px;
-                            padding: 0;
-                            margin-bottom: 25px;
-                        }
+            aside.right {
+                width: 100%;
 
-                        ::placeholder {
-                            text-align: left;
-                        }
-
-                        p.dot {
-                            display: none;
-                        }
-
-                        select {
-                            width: 95%;
-                            margin: 25px 0;
-                            line-height: 25px;
-                            padding: 0;
-                            color: rgb(131, 130, 130);
-                        }
-                    }
-
-                    .bottom {
-                        flex-direction: column;
-
-                        p.dot {
-                            display: none;
-                        }
-
-                        input {
-                            margin-top: 25px;
-                            width: 95%;
-                            line-height: 30px;
-                            padding: 0;
-                            margin-bottom: 25px;
-                        }
-
-                        ::placeholder {
-                            text-align: left;
-                        }
-                    }
-
-                    button {
+                form {
+                    .formContent {
                         margin-top: 50px;
+
+                        .radioContainer {
+                            div {
+                                margin-right: 5px;
+                                margin-top: 25px;
+
+                                label {
+                                    width: 170px;
+                                }
+                            }
+                        }
+
+                        .inputContainer {
+                            input {
+                                width: 100%;
+                            }
+
+                            #msg {
+                                width: 100%;
+                            }
+
+                        }
                     }
                 }
             }
@@ -787,255 +709,148 @@
 
     /* Projects site new version */
     section.projectSection {
-        margin-top: 80px;
+        padding-top: 50px;
 
         .projectContainer {
-            .outer-wrapper {
+            .wrapper {
+                padding: 0;
 
+                .slide {
+                    h1 {
+                        @include fontDeclaration($fontGilroyHeavy, 32px, #fff);
+                    }
 
-                .wrapper {
-                    padding: 50px 10px;
+                    h2 {
+                        @include fontDeclaration($fontGilroyHeavy, 18px, #fff);
+                    }
 
-                    .slide.one {
-                        h1 {
-                            @include fontDeclaration($fontGilroyHeavy, 32px, $colorDark);
-                            text-transform: uppercase;
+                    p {
+                        width: 100%;
 
-                            span {
+                        span {
+                            a {
+                                text-decoration: none;
                                 color: $colorBlue;
                             }
                         }
+                    }
 
-                        p.projectDescriptionText {
-                            @include fontDeclaration($fontPoppins, 14px, $colorLightGray);
-                            margin-top: 25px;
-                            width: 100%;
-                            line-height: 30px;
-                            margin-bottom: 50px;
-                            text-align: justify;
+                    .buttons {
+                        width: 100%;
+
+                        .time {
+                            width: 100px;
+                            color: #fff;
                         }
 
-                        span.time {
-                            width: 140px;
-                            padding: 10px;
-                            background-color: $colorPink;
-                            @include fontDeclaration($fontPoppins, 14px, #fff);
-                            text-align: center;
-                        }
+                        a {
+                            line-height: 40px;
+                            color: #fff;
 
-                        p.time {
-                            margin-top: 25px;
-                            margin-left: 5px;
-                            @include fontDeclaration($fontPoppins, 14px, $colorDark);
-                            text-transform: uppercase;
+                            .viewCode {
+                                width: 100px;
+                                line-height: 40px;
+                            }
+
+                            .visitSite {
+                                width: 70px;
+                                line-height: 40px;
+                            }
                         }
                     }
 
-                    .slide.two {
+                    .colContainer {
                         flex-direction: column;
 
-                        img {
-                            width: 95vw;
-                            height: 85vw;
-                            margin-top: 50px
-                        }
-
-                        .column {
-                            h1 {
-                                @include fontDeclaration($fontRoboto, 18px, $colorDark);
-                                text-transform: uppercase;
-                                margin-top: 50px
-                            }
-
-                            p {
-                                @include fontDeclaration($fontPoppins, 14px, $colorLightGray);
-                                margin-top: 15px;
-                                line-height: 30px;
-                                text-align: justify;
-
-                                span {
-                                    font-weight: 600;
-                                    color: $colorPink;
-                                }
-                            }
-                        }
-                    }
-
-                    .slide.three {
-                        img {
-                            width: 95vw;
-                            height: 85vw;
-                            margin: 50px 0;
-                            box-shadow: 3px 3px 13px 3px rgba(0, 0, 0, 0.2);
-                        }
-                    }
-
-                    .slide.four {
-                        .slideContainer {
-                            .textContainer {
-                                h1 {
-                                    @include fontDeclaration($fontRoboto, 18px, $colorDark);
-                                    text-transform: uppercase;
-                                }
-
-                                p {
-                                    @include fontDeclaration($fontPoppins, 14px, $colorLightGray);
-                                    margin-top: 15px;
-                                    line-height: 30px;
-                                    text-align: justify;
-                                    width: 100%;
-
-                                    span {
-                                        color: $colorPink;
-                                        font-weight: 600;
-                                    }
-                                }
-                            }
-
-                            .colContainer {
-                                margin: 25px 0 50px 0;
-
-                                .col {
-                                    width: 100%;
-                                    margin-top: 25px;
-
-                                    h2 {
-                                        @include fontDeclaration($fontPoppins, 14px, $colorDark);
-                                        text-transform: uppercase
-                                    }
-
-                                    li {
-                                        @include fontDeclaration($fontPoppins, 14px, $colorLightGray);
-                                        margin-top: 10px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .slide.five {
-                        display: flex;
-                        flex-direction: column;
-
-                        img {
-                            width: 95vw;
-                            height: 100%;
-                            animation: none;
-                            box-shadow: 3px 3px 13px 3px rgba(0, 0, 0, 0.2);
-                        }
-
-                        .slideContainer {
+                        .col {
                             width: 100%;
-                            margin: 50px 0;
-
-                            h1 {
-                                @include fontDeclaration($fontRoboto, 22px, $colorDark);
-                                text-transform: uppercase;
-                            }
-
-                            p {
-                                @include fontDeclaration($fontPoppins, 14px, $colorLightGray);
-                                margin-top: 15px;
-                                line-height: 30px;
-                                text-align: justify;
-                            }
+                            margin-top: 25px;
 
                             ul {
                                 li {
-                                    @include fontDeclaration($fontPoppins, 14px, $colorLightGray);
-                                    margin-top: 15px;
-                                    display: flex;
-                                    align-items: center;
-
-                                    span {
-                                        margin-right: 15px;
-                                        margin-left: 10px;
-                                        width: 10px;
-                                        height: 10px;
-                                        display: block;
-                                        border-radius: 50%;
-                                    }
-
-                                    span.redStatus {
-                                        background-color: crimson;
-                                    }
-
-                                    span.greenStatus {
-                                        background-color: limegreen;
-                                    }
-
-                                    span.orangeStatus {
-                                        background-color: orange;
-                                    }
+                                    width: 100%;
                                 }
                             }
                         }
                     }
+                }
 
-                    .slide.six {
-                        .slider {
-                            width: 100%;
-                            height: 100%;
+                .slide.one {
+                    h1 {
+                        padding-top: 25px;
+                    }
+                }
 
+                .slide.two {
+                    h2 {
+                        font-size: 18px;
+                    }
 
-                            .sliderContainer {
-                                width: 100%;
-                                height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
 
-                                .imageSection {
-                                    width: 100%;
-                                    height: 100%;
+                .slide.three {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
 
-                                    img {
-                                        width: 100%;
-                                        height: 80%;
-                                        box-shadow: 3px 3px 13px 3px rgba(0, 0, 0, 0.2);
-                                    }
-                                }
+                .slide.four {
+                    h2 {
+                        font-size: 18px;
+                    }
+                }
 
-                                .indicators {
-                                    display: flex;
-                                    width: 100%;
-                                    justify-content: center;
+                .slide.five {
+                    h2 {
+                        font-size: 18px;
+                    }
+                }
 
-                                    span {
-                                        margin: 25px;
+                .slide.six {
+                    .slider {
+                        width: 100%;
+                        height: 100%;
 
-                                        i {
-                                            color: $colorDark;
-                                        }
-                                    }
+                        .sliderContainer {
+                            .indicators {
+                                bottom: -15%;
+                                left: 0;
+                                justify-content: center;
+
+                                .arrow {
+                                    width: 30px;
+                                    height: 30px;
                                 }
                             }
                         }
                     }
+                }
 
-                    .slide.seven {
-                        margin: 25px 0 50px 0;
+                .slide.seven {
 
-                        h1 {
-                            @include fontDeclaration($fontRoboto, 18px, $colorDark);
-                            text-transform: uppercase;
-                        }
-
-                        p {
-                            @include fontDeclaration($fontPoppins, 14px, $colorLightGray);
-                            margin-top: 15px;
-                            line-height: 30px;
-                            text-align: justify;
-                            // padding: 0 150px 0 0;
-                        }
-
-                        .text2 {
-                            margin-top: 50px;
+                    .text1,
+                    .text2 {
+                        h2 {
+                            font-size: 18px;
                         }
                     }
+                }
 
-                    .slide.eight {
-                        img {
-                            width: 95vw;
-                            height: 100%;
-                        }
+                .slide.eight {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .slide.nine {
+                    h2 {
+                        font-size: 18px;
                     }
                 }
             }
