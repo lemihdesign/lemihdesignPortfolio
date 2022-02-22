@@ -38,3 +38,10 @@ Projekt zrealizowany został przy wykorzystaniu podstawowych narzędzi, służą
 Chcąc dobrze się prezentować na rynku pracy musiałem zadbać o poprawne wyświetlanie mojej strony na urządzeniach mobilnych. Portfolio posiada pełne wsparcie zarówno dla smartfonów jak i dla tabletów. Oznacza to, że użytkownik końcowy jest w stanie przeglądać zawartość mojej strony z dowolnego urządzenia.
 
 ![responsive](https://user-images.githubusercontent.com/76050486/155189647-11b0ec60-583f-4d04-9a59-7fffef74d0ee.png)
+
+# Kontakt
+Miło mi jeżeli dotrwałeś/aś do końca. Jestem początkującym Frontend Developerem, który poszukuje pierwszych doświadczeń komercyjnych. Jeżeli jesteś zainteresowany/a współpracą proszę o kontakt. Z miłą chęcią podejmę się rozmowy.
+
+- **hello@lemiszewski.pl**
+
+Jeżeli masz ochotę zobaczyć inne moje projekty, również takie, których nie zobaczysz na Githubie, zachęcam do zajrzenia na moje portfolio. Znajduje się ono pod adresem **www.lemiszewski.pl**
