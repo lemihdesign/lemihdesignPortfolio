@@ -167,18 +167,52 @@
               alt="addingMockup"
             />
           </div>
+          <div class="slide three">
+            <h2>Szczegóły produktów</h2>
+            <p>
+              Każdy produkt posiada swój osobny widok, do którego użytkownik
+              może przejść w celu poznania większej ilości szczegółów na temat
+              konkretnego obuwia. Aktualnie widok ten jest dość podstawowy i nie
+              zawiera bardzo dużej ilości informacji, aczkolwiek w przyszłości,
+              w łatwy sposób można go rozwinąć o dodatkowe funkcjonalności.
+            </p>
+            <img
+              src="src/projects/react-store/mockupImages/productDetailsMockup.jpg"
+              alt="addingMockup"
+            />
+          </div>
           <div class="slide four">
             <div class="slideContainer">
               <div class="textContainer">
                 <h2>Proces tworzenia projektu</h2>
                 <p>
-                  Projekt zrealizowany został przy użyciu podstawowych narzędzi,
-                  służących zarówno do projektowania warstwy wizualnej jak i do
-                  kodowania strony internetowej. W trakcie pracy użyłem
-                  programów <span>Figma</span> oraz
+                  Projekt zrealizowany został przy użyciu biblioteki React.js
+                  oraz podstawowych narzędzi, służących zarówno do projektowania
+                  warstwy wizualnej jak i do kodowania strony internetowej. W
+                  trakcie pracy korzystałem z programu
                   <span>Visual Studio Code</span>. Do kontroli wersji
                   oprogramowania, standardowo skorzystałem z
-                  <span>Github</span>.
+                  <span>Github</span>. Aby aplikacja mogła być pełnoprawną
+                  <span>Single Page Application</span> wykorzystałem
+                  <span>React Router</span> w wersji 6. Przy okazji tworzenia
+                  koszyka, postanowiłem, że przydatne mogą okazać się tzw.
+                  <span>App Wide States</span>, które dostarczył mi
+                  <span>Redux Toolkit</span>. Dodatkowo do obsługi pól
+                  tekstowych formularza wykorzystałem stworzony przeze mnie
+                  customowy <span>Hook</span>, który oparty jest o
+                  <span>useReducer()</span>. W celach wizualnych, oraz dla
+                  lepszego UX zdecydowałem się skorzystać z biblioteki
+                  <span>React Toastify</span>, która dostarczyła mi prostych
+                  powiadomień, które pokazują się na ekranie użytkownika w
+                  momencie zmian stanu koszyka. Dodawanie, usuwanie i zmiana
+                  elementów koszyka generuje odpowiednie komunikaty, napisane w
+                  języku angielskim. Strona przeszła również podstawową
+                  optymalizację. Postanowiłem wykorzystać tzw.
+                  <span>Lazy Loading</span> po to, aby komponenty ładowane były
+                  tylko wtedy, gdy jest to wymagane. Aplikacja ta jest co prawda
+                  na tyle mała, że różnica nie jest diametralnie wielka,
+                  aczkolwiek uznałem, że jest to dobrą praktyką a przy okazji
+                  dobrym ćwiczeniem.
                 </p>
               </div>
               <div class="colContainer">
@@ -186,42 +220,41 @@
                   <h3>wymagania minimalne</h3>
                   <ul>
                     <li>Pozyskiwanie danych z zewnętrznego API</li>
+                    <li>Przedstawienie danych w sklepie</li>
+                    <li>Podział sklepu ze względu na płeć</li>
+                    <li>Obsługa routingu na stronie</li>
+                    <li>Wprowadzenie systemu filtracji produktów</li>
+                    <li>Wprowadzenie komponentu koszyka</li>
+                    <li>Obsługa ikony koszyka (licznika produktów)</li>
+                    <li>Obsługa zawartości koszyka</li>
                     <li>
-                      Automatyczne odświeżanie aktualnych danych po 30 sekundach
-                    </li>
-                    <li>Umożliwienie wyszukiwania kryptowalut</li>
-                    <li>Umożliwienie zmiany waluty</li>
-                    <li>
-                      Nasłuchiwanie na zmiany na rynku - reakcja na wzrosty i
-                      zniżki cen
+                      Zarządzanie stanem koszyka z wykorzystaniem Redux Toolkit
                     </li>
                     <li>
-                      Umożliwienie filtrowania ilości wyświetlanych kryptowalut
+                      Umożliwienie dodawanie/usuwanie elementów oraz
+                      modyfikowanie elementów koszyka
                     </li>
-                    <li>Przejrzystość i łatwość w obsłudze</li>
-                    <li>
-                      Stworzenie warstwy wizualnej dla komputerów osobistych
-                    </li>
-                    <li>Stworzenie warstwy wizualnej dla urządzeń mobilnych</li>
+                    <li>Dodanie różnych widoków koszyka</li>
+                    <li>Udostępnienie formularza do składania zamówienia</li>
+                    <li>Dodanie strony z detalami produktów</li>
                   </ul>
                 </div>
                 <div class="col">
                   <h3>poczynione kroki</h3>
                   <ul>
-                    <li>Stworzenie konceptu strony</li>
-                    <li>Stworzenie szablonu strony</li>
                     <li>Inicjalizacja projektu i repozytorium</li>
-                    <li>Stworzenie struktury strony</li>
+                    <li>Stworzenie konceptu strony</li>
+                    <li>Stworzenie struktury katalogów</li>
+                    <li>Podział strony na komponenty</li>
+                    <li>Stworzenie kluczowych komponentów</li>
+                    <li>Wykorzystanie React Router do stworzenia routingu</li>
                     <li>
-                      Ostylowanie strony z wykorzystaniem preprocesora SASS
+                      Zastosowanie Lazy Loading w celu optymalizacji strony
                     </li>
-                    <li>
-                      Wykorzystanie języka Javascript do oskryptowania
-                      funkcjonalności strony
-                    </li>
-                    <li>
-                      Obsługa zdarzeń na stronie przy użyciu języka Javascript
-                    </li>
+                    <li>Stworzenie store do przechowywania stanów aplikacji</li>
+                    <li>Stworzenie i obługa koszyka i jego stanów</li>
+                    <li>Ostylowanie aplikacji</li>
+                    <li>Dodanie powiadomień z biblioteki React Toastify</li>
                     <li>Przeprowadzenie testów manualnych</li>
                   </ul>
                 </div>
@@ -232,43 +265,21 @@
           <div class="slide seven">
             <h2>responsywność</h2>
             <p>
-              Obecnie użytkownik końcowy chce mieć dostęp do swojego ulubionego
-              oprogramowania na każdym urządzeniu, bez znaczenia czy mówimy
-              tutaj o telefonach czy komputerach. Tym samym, bardzo ważne było
-              odpowiednie zaprojektowanie strony pod urządzenia mobilne. Strona
-              internetowa Cryptorank jest w pełni responsywna. Oznacza to, że
-              możemy śledzić zmiany na rynku kryptowalut na urządzeniach
-              mobilnych. Wszystkie funkcjonalności są identyczne względem tych
-              przeznaczonych dla wersji na komputery osobiste. Jedyną różnicą
-              jest sposób wyświetlania. Tabelę z danymi ostylowałem w taki
-              sposób aby możliwe było jej przewijanie w poziomie.
+              Jak dobrze wiemy, dostępność aplikacji na urządzeniach mobilnych
+              jest w obecnych czasach rzeczą kluczową. Tym samym, bardzo ważnym
+              było dla mnie zapewnienie odpowiednich widoków dla korzystających
+              ze smartphonów. React Store App jest w pełni responsywna. Cały
+              proces stylowania aplikacji przeprowadzony został zgodnie z zasadą
+              Mobile First.
             </p>
           </div>
 
           <div class="slide eight cryptoEight">
             <img
               class="mobile"
-              src="src/projects/cryptorank/mockupImages/mobile.png"
+              src="src/projects/react-store/mockupImages/responsiveMockup.png"
               alt="mockupImage"
             />
-          </div>
-
-          <div class="slide nine">
-            <h2>możliwości rozwoju</h2>
-            <p>
-              Strona internetowa o takiej tematyce może zawierać wiele innych,
-              przydatnych dla użytkownika końcowego informacji. Wśród nich
-              zdecydowanie mogą znaleźć się:
-            </p>
-            <ul>
-              <li>Wykresy przedstawiające aktualną sytuację rynkową</li>
-              <li>Wykresy przedstawiające historię zmian</li>
-              <li>Kalkulator cen</li>
-              <li>
-                Blog o tematyce kryptowalut, zawierający najświeższe informacje
-                w formie postów.
-              </li>
-            </ul>
           </div>
         </div>
       </div>
