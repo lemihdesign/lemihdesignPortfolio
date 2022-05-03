@@ -1,0 +1,10 @@
+#dirs
+/wolontariusz_certyfikat
+/daietto_certyfikat
+/cryptorank_certyfikat
+/fonts
+
+#files
+.vscode
+README.md
+ewolontariusz.sql
