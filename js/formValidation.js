@@ -17,7 +17,7 @@ form.onsubmit = (e) => {
                 form.reset();
                 setTimeout(() => {
                     sendStatus.style.display = "none";
-                }, 3000);
+                }, 5000);
             }
             sendStatus.innerHTML = response;
         }

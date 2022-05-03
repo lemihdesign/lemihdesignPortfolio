@@ -22,6 +22,4 @@
     } else {
         echo "Pola imię, e-mail oraz wiadomość są polami wymaganymi!";
     }
-
-    // echo $reportType.' '.$clientName.' '.$clientEmail;
 ?>

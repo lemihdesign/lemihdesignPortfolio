@@ -1,314 +1,325 @@
 section.projectSection {
+  width: 100%;
+  height: 100%;
+
+  .projectContainer {
     width: 100%;
     height: 100%;
 
-    .projectContainer {
+    .wrapper {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 40px;
+
+      .slide {
         width: 100%;
         height: 100%;
 
-        .wrapper {
-            width: 90%;
-            height: 100%;
-            margin: 0 auto;
-            padding: 0 40px;
+        h1 {
+          @include fontDeclaration($fontGilroyHeavy, 72px, #fff);
+          text-transform: uppercase;
 
-            .slide {
+          span {
+            color: $colorBlue;
+          }
+        }
+
+        h2 {
+          @include fontDeclaration($fontGilroyHeavy, 56px, #fff);
+          text-transform: uppercase;
+        }
+
+        p {
+          @include fontDeclaration($fontPoppins, 14px, #c7c7c7);
+          margin-top: 25px;
+          line-height: 30px;
+          text-align: justify;
+          width: 70%;
+
+          span {
+            a {
+              text-decoration: none;
+              color: $colorBlue;
+            }
+          }
+        }
+
+        .buttons {
+          width: 500px;
+          height: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 25px;
+
+          .time {
+            width: 150px;
+            line-height: 40px;
+            display: block;
+            text-align: center;
+            background-color: $colorPink;
+            @include fontDeclaration($fontPoppins, 14px, #fff);
+          }
+
+          button.viewCode {
+            width: 150px;
+            line-height: 40px;
+            display: block;
+            text-align: center;
+            background-color: $colorBlue;
+            @include fontDeclaration($fontPoppins, 14px, #fff);
+            border: none;
+            cursor: not-allowed;
+          }
+
+          a {
+            text-decoration: none;
+            color: #fff;
+
+            .viewCode {
+              width: 150px;
+              line-height: 40px;
+              display: block;
+              text-align: center;
+              background-color: $colorBlue;
+              @include fontDeclaration($fontPoppins, 14px, #fff);
+            }
+
+            .visitSite {
+              width: 150px;
+              line-height: 40px;
+              display: block;
+              text-align: center;
+              background-color: $colorBlue;
+              @include fontDeclaration($fontPoppins, 14px, #fff);
+            }
+          }
+        }
+
+        .colContainer {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          margin-top: 50px;
+          margin-bottom: 50px;
+
+          h3 {
+            @include fontDeclaration($fontPoppins, 14px, #c7c7c7);
+            text-transform: uppercase;
+          }
+
+          .col {
+            width: 42%;
+          }
+        }
+
+        ul {
+          li {
+            @include fontDeclaration($fontPoppins, 13px, #c7c7c7);
+            line-height: 30px;
+
+            span.redStatus {
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+              vertical-align: middle;
+              border-radius: 50%;
+              border: none;
+              background-color: crimson;
+            }
+
+            span.greenStatus {
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+              vertical-align: middle;
+              border-radius: 50%;
+              border: none;
+              background-color: limegreen;
+            }
+
+            span.orangeStatus {
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+              vertical-align: middle;
+              border-radius: 50%;
+              border: none;
+              background-color: orange;
+            }
+          }
+        }
+      }
+
+      .slide.one {
+        h1 {
+          padding-top: 150px;
+        }
+
+        p.time {
+          font-size: 12px;
+          margin-top: 5px;
+        }
+      }
+
+      .slide.two {
+        img {
+          width: 70%;
+          height: 70%;
+          margin-top: 25px;
+        }
+
+        h2 {
+          margin-top: 50px;
+          font-size: 56px;
+        }
+      }
+
+      .slide.three {
+        img {
+          width: 70%;
+          height: 70%;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          object-fit: fill;
+        }
+      }
+
+      .slide.four {
+        h2 {
+          font-size: 56px;
+        }
+
+        p {
+          span {
+            color: $colorBlue;
+            font-weight: 800;
+          }
+        }
+
+        ul {
+          li {
+            width: 70%;
+          }
+        }
+      }
+
+      .slide.five {
+        h2 {
+          font-size: 56px;
+        }
+
+        ul {
+          li {
+            display: flex;
+            align-items: center;
+
+            span {
+              margin-right: 10px;
+            }
+          }
+
+          li:nth-child(1) {
+            margin-top: 25px;
+          }
+        }
+      }
+
+      .slide.six {
+        .slider {
+          position: relative;
+          width: 70%;
+          height: 70%;
+          margin-top: 50px;
+
+          .sliderContainer {
+            width: 100%;
+            height: 100%;
+
+            .imageSection {
+              img {
                 width: 100%;
                 height: 100%;
-
-                h1 {
-                    @include fontDeclaration($fontGilroyHeavy, 72px, #fff);
-                    text-transform: uppercase;
-
-                    span {
-                        color: $colorBlue;
-                    }
-                }
-
-                h2 {
-                    @include fontDeclaration($fontGilroyHeavy, 56px, #fff);
-                    text-transform: uppercase;
-                }
-
-                p {
-                    @include fontDeclaration($fontPoppins, 14px, #c7c7c7);
-                    margin-top: 25px;
-                    line-height: 30px;
-                    text-align: justify;
-                    width: 70%;
-
-                    span {
-                        a {
-                            text-decoration: none;
-                            color: $colorBlue;
-                        }
-                    }
-                }
-
-                .buttons {
-                    width: 500px;
-                    height: 40px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-top: 25px;
-
-                    .time {
-                        width: 150px;
-                        line-height: 40px;
-                        display: block;
-                        text-align: center;
-                        background-color: $colorPink;
-                        @include fontDeclaration($fontPoppins, 14px, #fff);
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color: #fff;
-
-                        .viewCode {
-                            width: 150px;
-                            line-height: 40px;
-                            display: block;
-                            text-align: center;
-                            background-color: $colorBlue;
-                            @include fontDeclaration($fontPoppins, 14px, #fff);
-                        }
-
-                        .visitSite {
-                            width: 150px;
-                            line-height: 40px;
-                            display: block;
-                            text-align: center;
-                            background-color: $colorBlue;
-                            @include fontDeclaration($fontPoppins, 14px, #fff);
-                        }
-                    }
-                }
-
-                .colContainer {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
-
-                    h3 {
-                        @include fontDeclaration($fontPoppins, 14px, #c7c7c7);
-                        text-transform: uppercase;
-                    }
-
-                    .col {
-                        width: 42%;
-                    }
-                }
-
-                ul {
-                    li {
-                        @include fontDeclaration($fontPoppins, 13px, #c7c7c7);
-                        line-height: 30px;
-
-                        span.redStatus {
-                            width: 10px;
-                            height: 10px;
-                            display: inline-block;
-                            vertical-align: middle;
-                            border-radius: 50%;
-                            border: none;
-                            background-color: crimson;
-                        }
-
-                        span.greenStatus {
-                            width: 10px;
-                            height: 10px;
-                            display: inline-block;
-                            vertical-align: middle;
-                            border-radius: 50%;
-                            border: none;
-                            background-color: limegreen;
-                        }
-
-                        span.orangeStatus {
-                            width: 10px;
-                            height: 10px;
-                            display: inline-block;
-                            vertical-align: middle;
-                            border-radius: 50%;
-                            border: none;
-                            background-color: orange;
-                        }
-                    }
-                }
+              }
             }
 
-            .slide.one {
-                h1 {
-                    padding-top: 150px;
-                }
+            .indicators {
+              position: absolute;
+              bottom: 50%;
+              left: 15%;
+              width: 100%;
+              height: 10%;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
 
-                p.time {
-                    font-size: 12px;
-                    margin-top: 5px;
+              .arrow {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: transparent;
+                border: none;
+                border: 1px solid #fff;
+                margin: 0 10px;
+                cursor: pointer;
+                transition: 0.8s;
+
+                i {
+                  transition: 0.8s;
+                  color: #fff;
                 }
+              }
+
+              .arrow:hover {
+                background-color: #fff;
+                box-shadow: 3px 3px 6px 3px rgba($color: #000000, $alpha: 0.2);
+
+                i {
+                  color: #000;
+                }
+              }
             }
-
-            .slide.two {
-                img {
-                    width: 70%;
-                    height: 70%;
-                    margin-top: 25px;
-                }
-
-                h2 {
-                    margin-top: 50px;
-                    font-size: 56px;
-                }
-            }
-
-            .slide.three {
-                img {
-                    width: 70%;
-                    height: 70%;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
-                }
-            }
-
-            .slide.four {
-                h2 {
-                    font-size: 56px;
-                }
-
-                p {
-                    span {
-                        color: $colorBlue;
-                        font-weight: 800;
-                    }
-                }
-
-                ul {
-                    li {
-                        width: 70%;
-                    }
-                }
-            }
-
-            .slide.five {
-                h2 {
-                    font-size: 56px;
-                }
-
-                ul {
-                    li {
-                        display: flex;
-                        align-items: center;
-
-                        span {
-                            margin-right: 10px;
-                        }
-                    }
-
-                    li:nth-child(1) {
-                        margin-top: 25px;
-                    }
-                }
-            }
-
-            .slide.six {
-                .slider {
-                    position: relative;
-                    width: 70%;
-                    height: 70%;
-                    margin-top: 50px;
-
-                    .sliderContainer {
-                        width: 100%;
-                        height: 100%;
-
-                        .imageSection {
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-
-                        .indicators {
-                            position: absolute;
-                            bottom: 50%;
-                            left: 15%;
-                            width: 100%;
-                            height: 10%;
-                            display: flex;
-                            justify-content: flex-end;
-                            align-items: center;
-
-                            .arrow {
-                                width: 40px;
-                                height: 40px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                border-radius: 50%;
-                                background-color: transparent;
-                                border: none;
-                                border: 1px solid #fff;
-                                margin: 0 10px;
-                                cursor: pointer;
-                                transition: .8s;
-
-                                i {
-                                    transition: .8s;
-                                    color: #fff;
-                                }
-                            }
-
-                            .arrow:hover {
-                                background-color: #fff;
-                                box-shadow: 3px 3px 6px 3px rgba($color: #000000, $alpha: 0.2);
-
-                                i {
-                                    color: #000;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .slide.seven {
-
-                .text1,
-                .text2 {
-                    h2 {
-                        font-size: 56px;
-                        margin-top: 50px;
-                    }
-                }
-            }
-
-            .slide.eight {
-                img {
-                    margin-top: 50px;
-                    margin-bottom: 50px;
-                    width: 70%;
-                    height: 70%;
-                }
-            }
-
-            .slide.nine {
-                padding-bottom: 150px;
-
-                h2 {
-                    font-size: 56px;
-                }
-
-                ul {
-                    li {
-                        width: 70%;
-                        list-style: inside;
-                    }
-                }
-            }
+          }
         }
+      }
+
+      .slide.seven {
+        .text1,
+        .text2 {
+          h2 {
+            font-size: 56px;
+            margin-top: 50px;
+          }
+        }
+      }
+
+      .slide.eight {
+        img {
+          margin-top: 50px;
+          margin-bottom: 50px;
+          width: 70%;
+          height: 70%;
+        }
+      }
+
+      .slide.nine {
+        padding-bottom: 150px;
+
+        h2 {
+          font-size: 56px;
+        }
+
+        ul {
+          li {
+            width: 70%;
+            list-style: inside;
+          }
+        }
+      }
     }
+  }
 }

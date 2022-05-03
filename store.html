@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Kacper Lemiszewski" />
+    <meta
+      name="description"
+      content="Tworzenie stron internetowych. Jestem Frontend Developerem z Jeleniej Góry. Zajmuję się tworzeniem stron internetowych w oparciu o szablony PSD, Adobe XD."
+    />
+    <meta
+      name="keywords"
+      content="web design jelenia góra, web design wrocław, responsive web design, responsywne strony, strony mobilne, web development, front-end developer, kodowanie stron internetowych, tworzenie stron internetowych jelenia góra, psd to html, adobe xd to html"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptorank | Kacper Lemiszewski</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="src/icon/icon.jpg" sizes="32x32" />
+  </head>
+  <body>
+    <nav class="projectNavigation">
+      <div class="hamburgerContainer">
+        <div class="hamburgerBox">
+          <button class="hamburger">
+            <span class="hamburgerInner"></span>
+          </button>
+        </div>
+      </div>
+      <ul class="projectNavigationList">
+        <li><a href="../" class="firstLink">strona główna</a></li>
+        <li><a href="../wolontariusz.html">e-wolontariusz</a></li>
+        <li><a href="../daietto.html">daietto</a></li>
+        <li><a href="../portfolio.html">portfolio</a></li>
+      </ul>
+    </nav>
+
+    <section class="projectSection">
+      <div class="projectContainer">
+        <div class="wrapper">
+          <div class="slide one">
+            <h1><span>react </span>store</h1>
+            <p class="projectDescriptionText">
+              React Store App jest to moja pierwsza, w pełni samodzielnie
+              wykonana aplikacja internetowa w React.js. Podczas nauki
+              zdecydowałem, że nadeszła odpowiednia pora na utrwalenie
+              wszystkiego co dotychczas poznałem. Tym samym postanowiłem
+              stworzyć Single Page Application, która wykorzystuje informacje
+              pochodzące z zewnętrznego API. Od samego początku, celem było
+              stworzenie mini sklepu internetowego (bez funkcjonalności
+              backendowych). Chciałem powtórzyć wszystko co związane m.in. z
+              Routingiem czy Reduxem.
+            </p>
+            <div class="buttons">
+              <span class="time">Czas realizacji</span>
+              <a
+                href="https://github.com/lemihdesign/store-react-app"
+                target="_blank"
+                ><span class="viewCode">Github</span></a
+              >
+              <a href="store"><span class="visitSite">Live</span></a>
+            </div>
+            <p class="time">W TRAKCIE REALIZACJI</p>
+          </div>
+          <div class="slide two">
+            <img
+              src="src/projects/react-store/mockupImages/projectMockup.png"
+              alt="storeMockup"
+            />
+            <div class="column">
+              <h2>Podstawowe założenia projektu</h2>
+              <p>
+                Użytkownik, wchodząc na stronę internetową, ma bezpośredni
+                dostęp do sklepu internetowego. Podzielony został on na trzy
+                różne działy obuwnicze - męski, damski oraz dziecięcy. Jako, że
+                jest to Single Page Application, poruszanie pomiędzy
+                podstronami, zrealizowane zostało przy pomocy React Router w
+                wersji 6 i obsługi adresu URL dodatkowymi, opcjonalnymi
+                parametrami. Z poziomu sklepu, użytkownik jest w stanie
+                filtrować zwrócone wyniki. Obecnie dostarczone zostały cztery
+                opcje filtracji: płeć, marka, kolorystyka oraz cena.
+                <br /><br />
+                Główny komponent sklepu zawiera dynamicznie dopasowywane pod
+                kątem wymagań użytkownika dane, pochodzące z zewnętrznego API.
+                Dane te przedstawiają poszczególne produkty, wraz ze wszelkimi
+                szczegółami, tj. kolorystyka, zdjęcia, marka, nazwa itp.
+              </p>
+            </div>
+          </div>
+          <div class="slide three">
+            <img
+              src="src/projects/react-store/mockupImages/storeMockup.jpg"
+              alt="desktopMockup"
+            />
+          </div>
+          <div class="slide three">
+            <p>
+              Każdy produkt można zarówno dodać do koszyka jak i go usunąć. W
+              tym celu wystarczy nacisnąć na zdjęcie interesującego nas produktu
+              oraz wybrać jedną z dwóch akcji, które reprezentowane są przez
+              specjalne ikony. Pierwsza z nich służy do dodawania do koszyka
+              natomiast druga do wyświetlania szczegółów danego produktu. Po
+              umieszczeniu produktu w koszyku, zmianie ulega stan koszyka.
+            </p>
+            <img
+              src="src/projects/react-store/mockupImages/addingToCart.jpg"
+              alt="addingMockup"
+            />
+          </div>
+          <div class="slide three">
+            <h2>Koszyk</h2>
+            <p>
+              Dostęp do koszyka możliwy jest z każdego miejsca aplikacji. Sam
+              koszyk posiada dynamiczny content, który dopasowywany jest w
+              zależności od tego czy coś się w nim znajduje czy nie. W ten
+              sposób można odpowiednio informować użytkownika o aktualnym stanie
+              zakupów. W momencie gdy użytkownik doda produkty do koszyka, jest
+              on w stanie bezpośrednio z jego poziomu zmieniać ich ilość jak i
+              całkowicie je usuwać. Aktualna cena jest dopasowywana w sposób
+              dynamiczny bazując na aktualnej ilości produktów w koszyku.
+            </p>
+            <img
+              src="src/projects/react-store/mockupImages/emptyCartMockup.jpg"
+              alt="addingMockup"
+            />
+            <img
+              src="src/projects/react-store/mockupImages/cartMockup.jpg"
+              alt="addingMockup"
+            />
+          </div>
+          <div class="slide three">
+            <p>
+              Dodatkowo koszyk posiada kilka etapów. Pierwszym z nich jest
+              sprawdzanie aktualnego zamówienia, drugim jest sama jego
+              realizacja, która odbywa się poprzez wypełnienie specjalnie
+              przygotowanego formularza. Formularz posiada podstawową walidację,
+              zrealizowaną przy pomocy customowego hooka.
+            </p>
+            <img
+              src="src/projects/react-store/mockupImages/cartFormMockup.jpg"
+              alt="addingMockup"
+            />
+          </div>
+          <div class="slide three">
+            <p>
+              Po prawidłowej realizacji zamówienia, użytkownikowi ukazuje się
+              specjalny ekran potwierdzający. Dodatkowo cała dotychczasowa
+              zawartość koszyka jest czyszczona a sam użytkownik ma do wyboru
+              dwie akcje - kontynuowanie zakupów jak i przejście do strony
+              głównej.
+            </p>
+            <img
+              src="src/projects/react-store/mockupImages/completedOrderMockup.jpg"
+              alt="addingMockup"
+            />
+          </div>
+          <div class="slide four">
+            <div class="slideContainer">
+              <div class="textContainer">
+                <h2>Proces tworzenia projektu</h2>
+                <p>
+                  Projekt zrealizowany został przy użyciu podstawowych narzędzi,
+                  służących zarówno do projektowania warstwy wizualnej jak i do
+                  kodowania strony internetowej. W trakcie pracy użyłem
+                  programów <span>Figma</span> oraz
+                  <span>Visual Studio Code</span>. Do kontroli wersji
+                  oprogramowania, standardowo skorzystałem z
+                  <span>Github</span>.
+                </p>
+              </div>
+              <div class="colContainer">
+                <div class="col">
+                  <h3>wymagania minimalne</h3>
+                  <ul>
+                    <li>Pozyskiwanie danych z zewnętrznego API</li>
+                    <li>
+                      Automatyczne odświeżanie aktualnych danych po 30 sekundach
+                    </li>
+                    <li>Umożliwienie wyszukiwania kryptowalut</li>
+                    <li>Umożliwienie zmiany waluty</li>
+                    <li>
+                      Nasłuchiwanie na zmiany na rynku - reakcja na wzrosty i
+                      zniżki cen
+                    </li>
+                    <li>
+                      Umożliwienie filtrowania ilości wyświetlanych kryptowalut
+                    </li>
+                    <li>Przejrzystość i łatwość w obsłudze</li>
+                    <li>
+                      Stworzenie warstwy wizualnej dla komputerów osobistych
+                    </li>
+                    <li>Stworzenie warstwy wizualnej dla urządzeń mobilnych</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>poczynione kroki</h3>
+                  <ul>
+                    <li>Stworzenie konceptu strony</li>
+                    <li>Stworzenie szablonu strony</li>
+                    <li>Inicjalizacja projektu i repozytorium</li>
+                    <li>Stworzenie struktury strony</li>
+                    <li>
+                      Ostylowanie strony z wykorzystaniem preprocesora SASS
+                    </li>
+                    <li>
+                      Wykorzystanie języka Javascript do oskryptowania
+                      funkcjonalności strony
+                    </li>
+                    <li>
+                      Obsługa zdarzeń na stronie przy użyciu języka Javascript
+                    </li>
+                    <li>Przeprowadzenie testów manualnych</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide seven">
+            <h2>responsywność</h2>
+            <p>
+              Obecnie użytkownik końcowy chce mieć dostęp do swojego ulubionego
+              oprogramowania na każdym urządzeniu, bez znaczenia czy mówimy
+              tutaj o telefonach czy komputerach. Tym samym, bardzo ważne było
+              odpowiednie zaprojektowanie strony pod urządzenia mobilne. Strona
+              internetowa Cryptorank jest w pełni responsywna. Oznacza to, że
+              możemy śledzić zmiany na rynku kryptowalut na urządzeniach
+              mobilnych. Wszystkie funkcjonalności są identyczne względem tych
+              przeznaczonych dla wersji na komputery osobiste. Jedyną różnicą
+              jest sposób wyświetlania. Tabelę z danymi ostylowałem w taki
+              sposób aby możliwe było jej przewijanie w poziomie.
+            </p>
+          </div>
+
+          <div class="slide eight cryptoEight">
+            <img
+              class="mobile"
+              src="src/projects/cryptorank/mockupImages/mobile.png"
+              alt="mockupImage"
+            />
+          </div>
+
+          <div class="slide nine">
+            <h2>możliwości rozwoju</h2>
+            <p>
+              Strona internetowa o takiej tematyce może zawierać wiele innych,
+              przydatnych dla użytkownika końcowego informacji. Wśród nich
+              zdecydowanie mogą znaleźć się:
+            </p>
+            <ul>
+              <li>Wykresy przedstawiające aktualną sytuację rynkową</li>
+              <li>Wykresy przedstawiające historię zmian</li>
+              <li>Kalkulator cen</li>
+              <li>
+                Blog o tematyce kryptowalut, zawierający najświeższe informacje
+                w formie postów.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/hamburgerProjectMenu.js"></script>
+    <script src="js/sliderVolunteer.js"></script>
+  </body>
+</html>
